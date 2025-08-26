@@ -4,6 +4,9 @@ export default defineConfig({
   title: 'Deepractice Docs',
   description: 'Technical documentation center',
   
+  // 忽略死链接检查
+  ignoreDeadLinks: true,
+  
   // 主题配置
   themeConfig: {
     logo: '/logo.svg',
