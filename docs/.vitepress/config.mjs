@@ -128,6 +128,19 @@ export default defineConfig({
                     { text: '高级特性', link: '/zh/standards/typescript/patterns' },
                     { text: '开发工具', link: '/zh/standards/typescript/toolchain' }
                   ]
+                },
+                {
+                  text: 'Git 工作流规范',
+                  collapsed: false,
+                  items: [
+                    { text: '总览', link: '/zh/standards/git/' },
+                    { text: '分支管理', link: '/zh/standards/git/branch-management' },
+                    { text: '提交规范', link: '/zh/standards/git/commit-convention' },
+                    { text: '协作流程', link: '/zh/standards/git/collaboration' },
+                    { text: '版本发布', link: '/zh/standards/git/release' },
+                    { text: '命令行工具', link: '/zh/standards/git/commands' },
+                    { text: '工具配置', link: '/zh/standards/git/tooling' }
+                  ]
                 }
               ]
             }
