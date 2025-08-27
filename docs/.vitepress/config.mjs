@@ -51,10 +51,10 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: '首页', link: '/zh/' },
+          { text: '规范', link: '/zh/standards/' },
           { text: '项目', link: '/zh/projects/' },
           { text: '产品', link: '/zh/products/' },
-          { text: '博客', link: '/zh/blog/' },
-          { text: '开发规范', link: '/zh/standards/' }
+          { text: '博客', link: '/zh/blog/' }
         ],
 
         sidebar: {
@@ -90,7 +90,7 @@ export default defineConfig({
           ],
           '/zh/standards/': [
             {
-              text: '开发规范',
+              text: '规范',
               items: [
                 { text: '概述', link: '/zh/standards/' },
                 { text: '代码规范', link: '/zh/standards/code-style' },
@@ -137,10 +137,10 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: 'Home', link: '/en/' },
+          { text: 'Standards', link: '/en/standards/' },
           { text: 'Projects', link: '/en/projects/' },
           { text: 'Products', link: '/en/products/' },
-          { text: 'Blog', link: '/en/blog/' },
-          { text: 'Standards', link: '/en/standards/' }
+          { text: 'Blog', link: '/en/blog/' }
         ],
 
         sidebar: {
@@ -176,7 +176,7 @@ export default defineConfig({
           ],
           '/en/standards/': [
             {
-              text: 'Development Standards',
+              text: 'Standards',
               items: [
                 { text: 'Overview', link: '/en/standards/' },
                 { text: 'Code Style', link: '/en/standards/code-style' },

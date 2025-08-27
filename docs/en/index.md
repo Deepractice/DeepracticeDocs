@@ -13,7 +13,7 @@ hero:
       text: Get Started
       link: /en/projects/
     - theme: alt
-      text: Dev Standards
+      text: View Standards
       link: /en/standards/
 
 features:
@@ -30,8 +30,8 @@ features:
     details: Team technical sharing, experience summaries, problem solutions, and cutting-edge technology exploration
     link: /en/blog/
   - icon: 📏
-    title: Development Standards
-    details: Unified code standards, Git workflow, API design standards, and documentation guidelines
+    title: Standards
+    details: Unified technical standards, project management processes, API design standards, and documentation guidelines
     link: /en/standards/
 ---
 

@@ -1,8 +1,8 @@
-# Development Standards
+# Standards
 
 ## Overview
 
-Unified development standards help improve code quality and enhance team collaboration efficiency.
+Unified standards help improve work quality and enhance team collaboration efficiency. Our standards cover technical development, project management, documentation and more.
 
 ## Standards List
 
