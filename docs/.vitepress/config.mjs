@@ -93,10 +93,27 @@ export default defineConfig({
               text: '规范',
               items: [
                 { text: '概述', link: '/zh/standards/' },
-                { text: '代码规范', link: '/zh/standards/code-style' },
-                { text: 'Git规范', link: '/zh/standards/git' },
-                { text: 'API设计规范', link: '/zh/standards/api' },
-                { text: '文档规范', link: '/zh/standards/docs' }
+                {
+                  text: '文档撰写规范',
+                  collapsed: false,
+                  items: [
+                    { text: '总览', link: '/zh/standards/documentation/' },
+                    { text: '文档结构', link: '/zh/standards/documentation/structure' },
+                    { text: '命名规范', link: '/zh/standards/documentation/naming' },
+                    { text: '内容规范', link: '/zh/standards/documentation/content' }
+                  ]
+                },
+                {
+                  text: 'Monorepo 基础架构规范',
+                  collapsed: false,
+                  items: [
+                    { text: '总览', link: '/zh/standards/monorepo/' },
+                    { text: '项目初始化', link: '/zh/standards/monorepo/initialization' },
+                    { text: '开发环境配置', link: '/zh/standards/monorepo/environment' },
+                    { text: '工作区配置', link: '/zh/standards/monorepo/workspace' },
+                    { text: '工程化规范', link: '/zh/standards/monorepo/engineering' }
+                  ]
+                }
               ]
             }
           ]
