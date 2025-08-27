@@ -93,6 +93,7 @@ export default defineConfig({
               text: '规范',
               items: [
                 { text: '概述', link: '/zh/standards/' },
+                { text: '版本兼容性矩阵', link: '/zh/standards/compatibility' },
                 {
                   text: '文档撰写规范',
                   collapsed: false,
@@ -108,10 +109,24 @@ export default defineConfig({
                   collapsed: false,
                   items: [
                     { text: '总览', link: '/zh/standards/monorepo/' },
+                    { text: '快速开始', link: '/zh/standards/monorepo/quick-start' },
                     { text: '项目初始化', link: '/zh/standards/monorepo/initialization' },
                     { text: '开发环境配置', link: '/zh/standards/monorepo/environment' },
                     { text: '工作区配置', link: '/zh/standards/monorepo/workspace' },
                     { text: '工程化规范', link: '/zh/standards/monorepo/engineering' }
+                  ]
+                },
+                {
+                  text: 'TypeScript 编码规范',
+                  collapsed: false,
+                  items: [
+                    { text: '总览', link: '/zh/standards/typescript/' },
+                    { text: '配置规范', link: '/zh/standards/typescript/config' },
+                    { text: '命名规范', link: '/zh/standards/typescript/naming' },
+                    { text: '类型系统', link: '/zh/standards/typescript/type-system' },
+                    { text: '编码风格', link: '/zh/standards/typescript/coding-style' },
+                    { text: '高级特性', link: '/zh/standards/typescript/patterns' },
+                    { text: '开发工具', link: '/zh/standards/typescript/toolchain' }
                   ]
                 }
               ]

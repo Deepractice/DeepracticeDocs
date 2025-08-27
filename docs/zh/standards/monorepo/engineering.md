@@ -2,7 +2,7 @@
 
 本章介绍 Monorepo 项目的工程化实践，包括自动化工具、质量保障、性能优化等最佳实践。
 
-## 第一条 Git Hooks 自动化
+## Git Hooks 自动化
 
 ### 1.1 Lefthook 配置
 
@@ -117,7 +117,7 @@ pre-push:
       run: turbo run test --cache-dir=.turbo
 ```
 
-## 第二条 代码质量自动化
+## 代码质量自动化
 
 ### 2.1 自动格式化
 
@@ -215,7 +215,7 @@ export default defineConfig({
 }
 ```
 
-## 第三条 构建优化
+## 构建优化
 
 ### 3.1 缓存策略
 
@@ -317,7 +317,7 @@ export default defineConfig({
 ]
 ```
 
-## 第四条 开发体验优化
+## 开发体验优化
 
 ### 4.1 自动补全和类型提示
 
@@ -385,7 +385,7 @@ export default defineConfig({
 })
 ```
 
-## 第五条 文档自动化
+## 文档自动化
 
 ### 5.1 文档生成
 
@@ -444,7 +444,7 @@ pnpm changeset init
 ```
 
 
-## 第六条 命令管理规范
+## 命令管理规范
 
 ### 6.1 命令命名标准
 

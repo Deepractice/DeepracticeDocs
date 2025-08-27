@@ -2,7 +2,7 @@
 
 本章介绍 Monorepo 项目的开发环境配置，包括模块系统、构建工具、代码规范和测试框架的设置。
 
-## 第一条 模块系统
+## 模块系统
 
 ### 1.1 统一使用 ESModule
 
@@ -65,7 +65,7 @@ export default defineConfig({
 })
 ```
 
-## 第二条 TypeScript 配置
+## TypeScript 配置
 
 ### 2.1 分层配置策略
 
@@ -142,7 +142,7 @@ configs/typescript/
 }
 ```
 
-## 第三条 构建工具
+## 构建工具
 
 ### 3.1 tsup 配置
 
@@ -228,14 +228,14 @@ export default defineConfig({
 }
 ```
 
-## 第四条 代码质量工具
+## 代码质量工具
 
 ### 4.1 ESLint 配置
 
 #### 4.1.1 共享配置
 `configs/eslint/base.js`：
 ```javascript
-module.exports = {
+export default {
   root: true,
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint', 'import'],
@@ -351,7 +351,7 @@ commit-msg:
         fi
 ```
 
-## 第五条 测试环境
+## 测试环境
 
 ### 5.1 Vitest 配置
 
@@ -405,7 +405,7 @@ export default defineConfig({
 }
 ```
 
-## 第六条 编辑器配置
+## 编辑器配置
 
 ### 6.1 VSCode 配置
 
@@ -467,7 +467,7 @@ trim_trailing_whitespace = false
 indent_style = tab
 ```
 
-## 第七条 环境变量
+## 环境变量
 
 ### 7.1 环境配置
 

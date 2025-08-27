@@ -2,7 +2,7 @@
 
 本章介绍如何从零开始创建一个 Monorepo 项目，包括环境准备、工具安装和基础结构搭建。
 
-## 第一条 环境准备
+## 环境准备
 
 ### 1.1 系统要求
 
@@ -48,7 +48,7 @@ pnpm config set store-dir ~/.pnpm-store
 pnpm config set auto-install-peers true
 ```
 
-## 第二条 创建项目结构
+## 创建项目结构
 
 ### 2.1 初始化项目
 
@@ -116,7 +116,7 @@ touch packages/.gitkeep
 touch services/.gitkeep
 ```
 
-## 第三条 安装核心依赖
+## 安装核心依赖
 
 ### 3.1 安装 Turborepo
 
@@ -195,7 +195,7 @@ commit-msg:
         }
 ```
 
-## 第四条 配置文件设置
+## 配置文件设置
 
 ### 4.1 环境配置
 
@@ -311,7 +311,7 @@ temp/
 *.pdf binary
 ```
 
-## 第五条 验证安装
+## 验证安装
 
 ### 5.1 创建测试包
 
@@ -396,7 +396,7 @@ pnpm turbo run build --graph
 pnpm turbo run build --dry-run
 ```
 
-## 第六条 VSCode 配置（可选）
+## VSCode 配置（可选）
 
 ### 6.1 工作区设置
 
@@ -497,9 +497,9 @@ lefthook run pre-commit
 
 项目初始化完成后，你可以：
 
-1. **[配置开发环境](/zh/standards/monorepo/environment)** - TypeScript、构建工具、测试框架
-2. **[配置工作区](/zh/standards/monorepo/workspace)** - pnpm workspace 和包依赖管理
-3. **[添加工程化规范](/zh/standards/monorepo/engineering)** - Git Hooks、代码规范等
+1. **[配置开发环境](./environment)** - TypeScript、构建工具、测试框架
+2. **[配置工作区](./workspace)** - pnpm workspace 和包依赖管理
+3. **[添加工程化规范](./engineering)** - Git Hooks、代码规范等
 
 ## 完整初始化脚本
 

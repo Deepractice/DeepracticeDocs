@@ -2,7 +2,7 @@
 
 本章介绍 Monorepo 工作区的配置，包括包管理、依赖关系、任务编排等核心机制。
 
-## 第一条 pnpm Workspace 配置
+## pnpm Workspace 配置
 
 ### 1.1 工作区定义
 
@@ -38,7 +38,7 @@ packages:
 - 包名使用 kebab-case
 - 名称要表达包的用途，不是技术实现
 
-## 第二条 依赖管理
+## 依赖管理
 
 ### 2.1 依赖类型
 
@@ -101,7 +101,7 @@ pnpm clean && pnpm install
 }
 ```
 
-## 第三条 TypeScript 项目引用
+## TypeScript 项目引用
 
 ### 3.1 项目引用配置
 
@@ -165,7 +165,7 @@ tsc --build --clean
 }
 ```
 
-## 第四条 Turborepo 任务编排
+## Turborepo 任务编排
 
 ### 4.1 任务依赖关系
 
@@ -249,7 +249,7 @@ turbo login
 turbo link
 ```
 
-## 第五条 包版本管理
+## 包版本管理
 
 ### 5.1 版本策略
 
@@ -304,7 +304,7 @@ turbo link
 }
 ```
 
-## 第六条 依赖关系可视化
+## 依赖关系可视化
 
 ### 6.1 分析工具
 
@@ -344,7 +344,7 @@ packages/      (底层：共享包)
 - ❌ 下层不能依赖上层
 - ❌ 避免循环依赖
 
-## 第七条 Monorepo 特定配置
+## Monorepo 特定配置
 
 ### 7.1 Git 配置
 
