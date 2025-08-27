@@ -9,7 +9,11 @@ export default defineConfig({
   
   // 主题配置
   themeConfig: {
-    logo: '/logo.svg',
+    logo: {
+      light: '/logo-light.png',
+      dark: '/logo-dark.png',
+      alt: 'Deepractice Docs'
+    },
     
     socialLinks: [
       { icon: 'github', link: 'https://github.com/Deepractice' }
