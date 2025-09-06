@@ -6,7 +6,7 @@ hero:
   text: "组织技术文档中心"
   tagline: 汇聚项目、产品、技术博客与各类规范
   image:
-    src: /logo.svg
+    src: /logo-dark.png
     alt: Deepractice
   actions:
     - theme: brand
