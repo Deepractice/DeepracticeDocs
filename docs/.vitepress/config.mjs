@@ -4,12 +4,25 @@ export default defineConfig({
   title: 'Deepractice Docs',
   description: 'Technical documentation center',
   
+  // 网站head配置
+  head: [
+    ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0' }],
+    ['meta', { name: 'keywords', content: 'Deepractice, 技术文档, 开发规范, TypeScript, Git工作流, Monorepo' }],
+    ['meta', { name: 'author', content: 'Deepractice Team' }],
+    ['link', { rel: 'icon', type: 'image/png', href: '/logo.png' }],
+    ['link', { rel: 'icon', type: 'image/png', href: '/logo-dark.png', media: '(prefers-color-scheme: light)' }],
+    ['link', { rel: 'icon', type: 'image/png', href: '/logo-light.png', media: '(prefers-color-scheme: dark)' }]
+  ],
+  
   // 忽略死链接检查
   ignoreDeadLinks: true,
   
   // 主题配置
   themeConfig: {
-    logo: '/logo.png',
+    logo: {
+      light: '/logo-dark.png',
+      dark: '/logo-light.png'
+    },
     
     socialLinks: [
       { icon: 'github', link: 'https://github.com/Deepractice' }
@@ -52,9 +65,9 @@ export default defineConfig({
         nav: [
           { text: '首页', link: '/zh/' },
           { text: '规范', link: '/zh/standards/' },
-          { text: '项目', link: '/zh/projects/' },
-          { text: '产品', link: '/zh/products/' },
-          { text: '博客', link: '/zh/blog/' }
+          { text: '项目', link: '' },
+          { text: '产品', link: '' },
+          { text: '博客', link: '' }
         ],
 
         sidebar: {
@@ -62,7 +75,7 @@ export default defineConfig({
             {
               text: '项目',
               items: [
-                { text: '项目概览', link: '/zh/projects/' },
+                { text: '概览', link: '/zh/projects/' },
                 { text: '项目A', link: '/zh/projects/project-a' },
                 { text: '项目B', link: '/zh/projects/project-b' }
               ]
@@ -72,9 +85,8 @@ export default defineConfig({
             {
               text: '产品',
               items: [
-                { text: '产品概览', link: '/zh/products/' },
-                { text: '产品1', link: '/zh/products/product-1' },
-                { text: '产品2', link: '/zh/products/product-2' }
+                { text: '概览', link: '/zh/products/' },
+                { text: 'coming soon...', link: '/zh/products/product-1' },
               ]
             }
           ],
