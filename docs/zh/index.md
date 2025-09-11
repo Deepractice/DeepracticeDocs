@@ -6,7 +6,8 @@ hero:
   text: "组织技术文档中心"
   tagline: 汇聚项目、产品、技术博客与各类规范
   image:
-    src: /logo-dark.png
+    light: /logo-dark.png
+    dark: /logo-light.png
     alt: Deepractice
   actions:
     - theme: brand
@@ -41,10 +42,10 @@ features:
 
 ### 最新更新
 
-- **[项目A v2.0 发布](/zh/projects/project-a)** - 全新架构升级，性能提升50%
-- **[代码规范更新](/zh/standards/code-style)** - 新增TypeScript最佳实践
-- **[产品集成指南](/zh/products/product-1)** - 详细的API对接文档
+- **[Git 工作流规范](/zh/standards/git/)** - 完善的分支管理和协作流程
+- **[TypeScript 编码规范](/zh/standards/typescript/)** - 新增类型系统和高级特性
+- **[Monorepo 基础架构规范](/zh/standards/monorepo/)** - 统一的项目管理方案
 
 ### 贡献指南
 
-我们欢迎所有成员参与文档的维护和更新。请查阅[文档规范](/zh/standards/docs)了解如何贡献高质量的文档。
+我们欢迎所有成员参与文档的维护和更新。请查阅[文档撰写规范](/zh/standards/documentation/)了解如何贡献高质量的文档。

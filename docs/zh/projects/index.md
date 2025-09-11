@@ -2,49 +2,57 @@
 layout: home
 
 hero:
-  name: "Deepractice Docs"
-  text: "组织技术文档中心"
-  tagline: 汇聚项目、产品、技术博客与开发规范
+  name: "项目文档"
+  text: "项目文档中心"
+  tagline: 项目架构设计、技术选型、开发流程和最佳实践
   image:
-    src: /logo.svg
+    light: /logo-dark.png
+    dark: /logo-light.png
     alt: Deepractice
   actions:
     - theme: brand
-      text: 开始阅读
-      link: /projects/
+      text: 浏览项目
+      link: /zh/projects/project-a
     - theme: alt
       text: 开发规范
-      link: /standards/
+      link: /zh/standards/
 
 features:
   - icon: 📁
     title: 项目文档
-    details: 详细记录各个项目的架构设计、技术选型、开发流程和最佳实践
-    link: /projects/
+    details: 项目架构设计、技术选型、开发流程和最佳实践
+    link: /zh/projects/
   - icon: 📦
     title: 产品文档
     details: 产品功能说明、使用指南、API文档和集成方案
-    link: /products/
+    link: /zh/products/
   - icon: 📝
     title: 技术博客
-    details: 团队技术分享、经验总结、问题解决方案和前沿技术探索
-    link: /blog/
+    details: 技术分享、经验总结、问题解决方案和前沿技术探索
+    link: /zh/blog/
   - icon: 📏
-    title: 开发规范
-    details: 统一的代码规范、Git工作流程、API设计标准和文档编写指南
-    link: /standards/
+    title: 规范文档
+    details: 统一的技术规范、项目管理流程、API设计标准和文档编写指南
+    link: /zh/standards/
 ---
 
-## 快速开始
+## 项目概览
 
-欢迎来到 Deepractice 文档中心！这里汇集了我们团队的所有技术文档、产品说明和开发规范。
+欢迎来到 Deepractice 项目文档中心！这里详细记录了我们团队的各个项目信息。
 
-### 最新更新
+### 当前项目
 
-- **[项目A v2.0 发布](/projects/project-a)** - 全新架构升级，性能提升50%
-- **[代码规范更新](/standards/code-style)** - 新增TypeScript最佳实践
-- **[产品集成指南](/products/product-1)** - 详细的API对接文档
+- **项目A** - 核心开发工具套件
+- **项目B** - 协作平台解决方案
 
-### 贡献指南
+### 文档说明
 
-我们欢迎所有成员参与文档的维护和更新。请查阅[文档规范](/standards/docs)了解如何贡献高质量的文档。
+每个项目包含以下内容：
+- 🏗️ **架构设计** - 系统架构和技术选型
+- 📝 **开发指南** - 开发环境配置和开发流程
+- 🚀 **部署文档** - 部署步骤和运维指南
+- 📋 **API文档** - 接口规范和使用示例
+
+### 参与贡献
+
+欢迎团队成员参与项目文档的维护，请遵循[文档撰写规范](/zh/standards/documentation/)。
