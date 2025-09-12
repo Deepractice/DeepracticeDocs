@@ -1,0 +1,80 @@
+/**
+ * Deepractice 品牌色彩定义
+ */
+:root {
+  --deepractice-primary: #3451b2;
+  --deepractice-primary-light: #5672cd;
+  --deepractice-primary-dark: #2a3f8f;
+  --deepractice-accent: #00bfa5;
+  --deepractice-gradient: linear-gradient(135deg, #3451b2 0%, #5672cd 100%);
+}
+
+.dark {
+  --deepractice-primary: #5672cd;
+  --deepractice-primary-light: #7891e3;
+  --deepractice-primary-dark: #3451b2;
+}
+
+/**
+ * 博客文章优化
+ */
+.vp-doc h1:first-of-type {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--vp-c-divider);
+}
+
+/* 仅在博客页面显示Footer */
+.vp-doc .blog-footer {
+  display: block;
+}
+
+/* 非博客页面隐藏Footer - 可以根据路径调整 */
+body:not([data-page*="blog"]) .blog-footer {
+  /* 如果不想在所有页面显示，取消下面的注释 */
+  /* display: none; */
+}
+
+/**
+ * SEO 优化样式
+ */
+.blog-footer {
+  /* 确保搜索引擎能够正确识别 */
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* 结构化数据标记辅助 */
+.blog-footer [itemscope],
+.blog-footer [itemprop] {
+  /* 保持语义化 */
+}
+
+/**
+ * 打印样式优化
+ */
+@media print {
+  .blog-footer {
+    background: white !important;
+    border: 1px solid #ddd !important;
+    color: black !important;
+  }
+  
+  .blog-footer a {
+    color: #3451b2 !important;
+    text-decoration: underline !important;
+  }
+}
+
+/**
+ * 无障碍访问优化
+ */
+.blog-footer a:focus-visible {
+  outline: 2px solid var(--deepractice-primary);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.blog-footer [role="button"]:focus-visible {
+  outline: 2px solid var(--deepractice-accent);
+  outline-offset: 2px;
+}

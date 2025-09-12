@@ -2,16 +2,21 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   title: 'Deepractice Docs',
-  description: 'Technical documentation center',
+  description: '深度实践技术文档中心 - 让AI触手可及 | Make AI at your fingertips',
   
   // 网站head配置
   head: [
     ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0' }],
-    ['meta', { name: 'keywords', content: 'Deepractice, 技术文档, 开发规范, TypeScript, Git工作流, Monorepo' }],
+    ['meta', { name: 'keywords', content: 'Deepractice, 深度实践, AI标准, 开源框架, 智能体, AI Agent, 标准化基础设施, 智能协同, ISSUE方法, 技术文档, 开发规范' }],
     ['meta', { name: 'author', content: 'Deepractice Team' }],
+    ['meta', { property: 'og:site_name', content: 'Deepractice Docs' }],
+    ['meta', { property: 'og:locale', content: 'zh_CN' }],
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { name: 'twitter:site', content: '@deepractice' }],
     ['link', { rel: 'icon', type: 'image/png', href: '/logo.png' }],
     ['link', { rel: 'icon', type: 'image/png', href: '/logo-dark.png', media: '(prefers-color-scheme: light)' }],
-    ['link', { rel: 'icon', type: 'image/png', href: '/logo-light.png', media: '(prefers-color-scheme: dark)' }]
+    ['link', { rel: 'icon', type: 'image/png', href: '/logo-light.png', media: '(prefers-color-scheme: dark)' }],
+    ['link', { rel: 'canonical', href: 'https://docs.deepractice.ai' }]
   ],
   
   // 忽略死链接检查
@@ -65,9 +70,10 @@ export default defineConfig({
         nav: [
           { text: '首页', link: '/zh/' },
           { text: '规范', link: '/zh/standards/' },
-          { text: '项目', link: '' },
-          { text: '产品', link: '' },
-          { text: '博客', link: '' }
+          { text: '项目', link: '/zh/projects/' },
+          { text: '产品', link: '/zh/products/' },
+          { text: '博客', link: '/zh/blog/' },
+          { text: '关于', link: '/zh/about' }
         ],
 
         sidebar: {
@@ -161,7 +167,7 @@ export default defineConfig({
 
         footer: {
           message: '基于 MIT 许可发布',
-          copyright: '版权所有 © 2024-现在 Deepractice'
+          copyright: '版权所有 © 2025 Deepractice'
         },
 
         lastUpdated: {
@@ -247,7 +253,7 @@ export default defineConfig({
 
         footer: {
           message: 'Released under the MIT License.',
-          copyright: 'Copyright © 2024-present Deepractice'
+          copyright: 'Copyright © 2025 Deepractice'
         },
 
         lastUpdated: {
