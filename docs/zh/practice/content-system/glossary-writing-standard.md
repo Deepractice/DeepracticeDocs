@@ -1,5 +1,5 @@
 ---
-layer: Standards
+layer: Practice
 type: Reference
 title: 术语表撰写规范
 category: content-system
@@ -33,7 +33,7 @@ tags:
 
 - **不限定在特定层级** - 哪里需要就在哪里创建
 - **类型固定为 Reference** - 术语表永远是查询导向的
-- **可以跨层引用** - Pattern层的术语表可以定义Standards层的概念
+- **可以跨层引用** - Pattern层的术语表可以定义Practice层的概念
 
 ## 识别标准
 
@@ -108,7 +108,7 @@ title: [主题]术语表
 
 ### 规范
 **定义**：定义执行方式和实施细则的标准
-**层级**：Standards层
+**层级**：Practice层
 **英文**：Standards/Specification
 ```
 
@@ -235,7 +235,7 @@ title: [主题]术语表
 **关注**：如何沟通协作
 **内容**：接口、协议、规则
 
-### Standards（规范）
+### Practice（实践）
 **定义**：定义执行标准和实施细则的层级
 **关注**：如何具体执行
 **内容**：规范、标准、指南
@@ -278,7 +278,7 @@ title: [主题]术语表
 
 ```
 /patterns/content-system/glossary.md     # Pattern层的内容体系术语
-/standards/technical-glossary.md         # Standards层的技术术语
+/practice/technical-glossary.md         # Practice层的技术术语
 /products/promptx/glossary.md           # 特定产品的术语
 /protocols/dpml/glossary.md             # 特定协议的术语
 ```

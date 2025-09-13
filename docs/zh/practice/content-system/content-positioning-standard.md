@@ -1,5 +1,5 @@
 ---
-layer: Standards
+layer: Practice
 type: Reference
 title: 内容定位规范
 category: content-system
@@ -27,7 +27,7 @@ tags:
 |------|------|---------|---------|
 | **模式层** | Pattern | 理念、哲学、思想 | 为什么这样想？ |
 | **协议层** | Protocol | 交互规则、通信约定 | 如何沟通协作？ |
-| **规范层** | Standards | 执行标准、实施细则 | 如何具体执行？ |
+| **实践层** | Practice | 执行标准、最佳实践 | 如何具体执行？ |
 | **产品层** | Products | 实例、案例、实现 | 实际怎么用？ |
 
 ### 横向定位：Diátaxis类型
@@ -47,7 +47,7 @@ tags:
 |------|----------|----------|------|
 | **Pattern** | Explanation | Reference | 解释理念为主，术语定义为辅 |
 | **Protocol** | Reference | Explanation | 规范定义为主，设计原理为辅 |
-| **Standards** | Reference | Explanation | 执行标准为主，应用场景为辅 |
+| **Practice** | Reference | Explanation | 执行标准为主，应用场景为辅 |
 | **Products** | How-to | Tutorial | 操作指南为主，入门教程为辅 |
 
 ### 定位示例
@@ -58,8 +58,8 @@ layer: Pattern
 type: Explanation
 title: 理解Deepractice内容体系
 
-# Standards层 + Reference  
-layer: Standards
+# Practice层 + Reference  
+layer: Practice
 type: Reference
 title: 文件命名规范
 
@@ -75,7 +75,7 @@ title: 如何部署文档网站
 
 | 字段 | 说明 | 取值范围 |
 |------|------|----------|
-| `layer` | 所属层级 | Pattern, Protocol, Standards, Products |
+| `layer` | 所属层级 | Pattern, Protocol, Practice, Products |
 | `type` | 文档类型 | Tutorial, How-to, Explanation, Reference |
 | `title` | 文档标题 | 简洁明确的标题 |
 | `category` | 分类标签 | 所属的内容分类 |
@@ -96,7 +96,7 @@ title: 如何部署文档网站
 
 ```yaml
 ---
-layer: Standards
+layer: Practice
 type: Reference
 title: 内容定位规范
 category: content-system
@@ -122,7 +122,7 @@ related:
 
 1. 内容是关于**思想理念**？→ Pattern
 2. 内容是关于**协作规则**？→ Protocol  
-3. 内容是关于**执行标准**？→ Standards
+3. 内容是关于**执行标准**？→ Practice
 4. 内容是关于**具体实现**？→ Products
 
 ### 第二步：确定类型
@@ -161,7 +161,7 @@ related:
 |----------|----------|------|
 | 理念术语 | Pattern | 核心思想概念 |
 | 协议术语 | Protocol | 交互通信术语 |
-| 技术术语 | Standards | 技术规范术语 |
+| 实践术语 | Practice | 执行标准术语 |
 | 产品术语 | Products | 产品功能术语 |
 
 ## 定位审查清单
@@ -202,7 +202,7 @@ related:
 
 当文档需要调整定位时：
 1. 更新元数据中的layer和type
-2. 移动文件到正确目录
+2. 移动文件到正确目录（如从standards/移到practice/）
 3. 更新所有相关链接
 4. 更新导航配置
 5. 记录迁移原因
@@ -212,7 +212,7 @@ related:
 | 错误 | 问题 | 解决方案 |
 |------|------|----------|
 | Pattern层写How-to | 理念层不应有操作步骤 | 移到Products层或改为Explanation |
-| Standards层缺少Reference | 规范层需要查询文档 | 补充Reference类型文档 |
+| Practice层缺少Reference | 实践层需要查询文档 | 补充Reference类型文档 |
 | 元数据不完整 | 影响内容管理和检索 | 补充所有必需字段 |
 | 层级定位模糊 | 不知道放哪一层 | 使用决策树明确定位 |
 | 类型选择困难 | 多种类型都沾边 | 选择主要目的对应的类型 |

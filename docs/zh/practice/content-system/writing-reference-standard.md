@@ -1,5 +1,5 @@
 ---
-layer: Standards
+layer: Practice
 type: Reference
 title: Reference 类型文档写作规范
 category: content-system

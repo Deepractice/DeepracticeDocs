@@ -1,5 +1,5 @@
 ---
-layer: Standards
+layer: Practice
 type: Reference
 title: 文档文件命名规范
 category: content-system
@@ -98,7 +98,7 @@ tags:
 - 偏向使用 `xxx-protocol.md`、`xxx-standard.md`
 - 例：`communication-protocol.md`、`data-standard.md`
 
-### Standards 层（规范）
+### Practice 层（实践）
 - 偏向使用 `xxx-specification.md`、`xxx-convention.md`
 - 例：`api-specification.md`、`coding-convention.md`
 

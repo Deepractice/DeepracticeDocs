@@ -1,5 +1,5 @@
 ---
-layer: Standards
+layer: Practice
 type: Reference
 title: 内容体系术语表
 category: content-system
@@ -39,7 +39,7 @@ Deepractice内容体系的核心概念定义，帮助理解和使用我们的文
 **内容**：接口定义、交互协议、通信规则
 **示例**：DPML协议、MCP协议
 
-### Standards（规范）
+### Practice（实践）
 **定义**：四层体系的第三层，定义执行标准和实施细则
 **关注**：如何具体执行？
 **内容**：规范文档、实施标准、操作指南
@@ -95,7 +95,7 @@ Deepractice内容体系的核心概念定义，帮助理解和使用我们的文
 **定义**：通过层级和类型两个维度确定文档位置
 **组成**：纵向定位（四层）+ 横向定位（Diátaxis）
 **作用**：精确定义每篇文档的归属和性质
-**示例**：Standards层的Reference文档
+**示例**：Practice层的Reference文档
 
 ### 内容定位
 **定义**：确定文档在体系中位置的过程
@@ -118,7 +118,7 @@ Deepractice内容体系的核心概念定义，帮助理解和使用我们的文
 ### 撰写标准
 **定义**：定义如何撰写特定类型文档的规范
 **范围**：四种Diátaxis类型各有撰写标准
-**位置**：Standards层
+**位置**：Practice层
 **示例**：Tutorial撰写标准、Reference撰写标准
 
 ### 元规范

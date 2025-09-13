@@ -90,7 +90,8 @@ export default withMermaid(
                   text: '内容体系',
                   collapsed: false,
                   items: [
-                    { text: '理解Deepractice内容体系', link: '/zh/patterns/content-system/understanding-content-system' }
+                    { text: '理解 Deepractice 4P 内容分层模式', link: '/zh/patterns/content-system/deepractice-4p-model' },
+                    { text: 'Deepractice 内容体系 — 4P × Diátaxis', link: '/zh/patterns/content-system/understanding-content-system' }
                   ]
                 }
               ]

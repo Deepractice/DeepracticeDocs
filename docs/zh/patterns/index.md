@@ -6,7 +6,8 @@
 
 探索Deepractice文档体系背后的设计思想。
 
-- [理解Deepractice内容体系](./content-system/understanding-content-system.md) - 为什么我们需要四层抽象与Diátaxis的融合
+- [理解 Deepractice 4P 内容分层模式](./content-system/deepractice-4p-model.md) - Pattern、Protocol、Practice、Products 四层递进
+- [Deepractice 内容体系 — 4P × Diátaxis](./content-system/understanding-content-system.md) - 双维度内容组织的正交设计
 
 ## 🔄 协作范式
 
