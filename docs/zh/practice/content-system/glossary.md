@@ -47,10 +47,11 @@ Deepractice内容体系的核心概念定义，帮助理解和使用我们的文
 **特点**：来自真实经验，更有温度，而非冷冰冰的规定
 
 ### Products（产品）
-**定义**：4P模式的第四层，具体的实现和实例
-**关注**：实际怎么用？
-**内容**：案例、实例、具体产品、实现代码
+**定义**：4P模式的第四层，Deepractice自主开发的具体实现和产品实例
+**关注**：我们的产品实际怎么用？
+**内容**：自主开发的产品、工具、平台及其使用案例
 **示例**：PromptX、DeepracticeDocs
+**边界**：仅限Deepractice自主创造的产品，不包括第三方工具的使用规范
 
 ### Diátaxis
 **定义**：文档类型分类框架，将文档分为四种类型
@@ -170,6 +171,22 @@ Deepractice内容体系的核心概念定义，帮助理解和使用我们的文
 **Specification**：更强调"规格说明"
 **Practice**：更强调"实践经验"，来自真实场景的最佳实践
 **关系**：在Deepractice体系中，Practice层包含Standards和Specification，但更有温度
+
+### 我们的产品 vs 外部工具
+
+**我们的产品（Products层）**：
+- Deepractice自主开发的软件、平台、工具
+- 如：PromptX、DeepracticeDocs、自研CLI工具
+- 文档类型：使用指南、功能说明、API文档
+
+**外部工具使用规范（Practice层）**：
+- 第三方工具在我们环境中的使用标准
+- 如：Git工作流规范、Docker使用规范、CI/CD配置标准
+- 文档类型：使用规范、配置标准、最佳实践
+
+**判断标准**：
+- 开发者是谁？Deepractice开发 → Products层；第三方开发 → Practice层
+- 控制权在哪？我们控制产品逻辑 → Products层；我们只控制使用方式 → Practice层
 
 ---
 

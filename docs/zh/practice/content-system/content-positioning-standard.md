@@ -139,6 +139,28 @@ related:
 - 是否选错了类型？
 - 是否需要拆分成多篇文档？
 
+### Products层特殊判断
+
+在确定是否属于Products层时，使用以下决策树：
+
+```mermaid
+flowchart TD
+    A[内容涉及具体实现] --> B{开发主体是谁?}
+    B -->|Deepractice| C[Products层]
+    B -->|第三方| D{我们的角色?}
+    D -->|使用者| E[Practice层]
+    D -->|贡献者/维护者| F[Products层]
+    
+    E --> G[制定使用规范]
+    C --> H[说明产品功能]
+    F --> I[说明贡献内容]
+```
+
+**典型场景**：
+- ✅ Products层：PromptX使用手册、DeepracticeDocs部署指南
+- ✅ Practice层：Git工作流规范、Docker使用标准、Nginx配置规范
+- ⚠️ 边界情况：我们fork并深度定制的开源工具 → 视定制程度决定
+
 ## 特殊情况处理
 
 ### 跨层级内容
@@ -163,6 +185,17 @@ related:
 | 协议术语 | Protocol | 交互通信术语 |
 | 实践术语 | Practice | 执行标准术语 |
 | 产品术语 | Products | 产品功能术语 |
+
+### 定位示例对比
+
+| 内容描述 | 错误定位 | 正确定位 | 理由 |
+|---------|---------|---------|------|
+| Git工作流规范 | Products层 | Practice层 | Git是第三方工具，我们制定使用规范 |
+| PromptX用户手册 | Practice层 | Products层 | PromptX是我们的产品 |
+| VSCode配置标准 | Products层 | Practice层 | VSCode是第三方工具 |
+| DeepracticeDocs主题开发 | Practice层 | Products层 | 我们自主开发的主题 |
+| Kubernetes部署规范 | Products层 | Practice层 | K8s是第三方，我们制定部署标准 |
+| 自研CLI工具手册 | Practice层 | Products层 | 我们自主开发的工具 |
 
 ## 定位审查清单
 
