@@ -137,10 +137,10 @@ export default withMermaid(
                     { text: '内容体系术语表', link: '/zh/practice/content-system/glossary' },
                     { text: '内容定位规范', link: '/zh/practice/content-system/content-positioning-standard' },
                     { text: '文件命名规范', link: '/zh/practice/content-system/file-naming-convention' },
-                    { text: 'Explanation撰写标准', link: '/zh/practice/content-system/writing-explanation-standard' },
-                    { text: 'How-to撰写标准', link: '/zh/practice/content-system/writing-howto-standard' },
-                    { text: 'Reference撰写标准', link: '/zh/practice/content-system/writing-reference-standard' },
-                    { text: 'Tutorial撰写标准', link: '/zh/practice/content-system/writing-tutorial-standard' },
+                    { text: 'Explanation撰写规范', link: '/zh/practice/content-system/writing-explanation-standard' },
+                    { text: 'How-to撰写规范', link: '/zh/practice/content-system/writing-howto-standard' },
+                    { text: 'Reference撰写规范', link: '/zh/practice/content-system/writing-reference-standard' },
+                    { text: 'Tutorial撰写规范', link: '/zh/practice/content-system/writing-tutorial-standard' },
                     { text: '术语表撰写规范', link: '/zh/practice/content-system/glossary-writing-standard' }
                   ]
                 }
