@@ -1,10 +1,10 @@
-# 规范（Standards）
+# 实践（Practice）
 
-规范层定义特定领域的结构化方案和最佳实践。
+实践层定义特定领域的执行标准和最佳实践，来自真实经验的总结和提炼。
 
-## 📚 内容体系规范
+## 📚 内容体系实践
 
-构建和管理Deepractice文档体系的完整规范。
+构建和管理Deepractice文档体系的完整实践标准。
 
 ### 核心定义
 
@@ -23,6 +23,6 @@
 - [Tutorial 撰写标准](./content-system/writing-tutorial-standard.md) - 如何写出引导学习的文档
 - [术语表撰写规范](./content-system/glossary-writing-standard.md) - 如何编写标准化的术语表
 
-## 更多规范
+## 更多实践标准
 
-更多领域规范正在构建中...
+更多领域实践标准正在构建中...

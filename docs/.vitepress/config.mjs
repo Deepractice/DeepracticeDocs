@@ -73,7 +73,7 @@ export default withMermaid(
           { text: '首页', link: '/zh/' },
           { text: '模式', link: '/zh/patterns/' },
           { text: '协议', link: '/zh/protocols/' },
-          { text: '规范', link: '/zh/standards/' },
+          { text: '实践', link: '/zh/practice/' },
           { text: '产品', link: '/zh/products/' },
           { text: '博客', link: '/zh/blog/' },
           { text: '关于', link: '/zh/about' }
@@ -125,23 +125,23 @@ export default withMermaid(
               ]
             }
           ],
-          '/zh/standards/': [
+          '/zh/practice/': [
             {
-              text: '规范（Schema）',
+              text: '实践（Practice）',
               items: [
-                { text: '概览', link: '/zh/standards/' },
+                { text: '概览', link: '/zh/practice/' },
                 {
                   text: '内容体系规范',
                   collapsed: false,
                   items: [
-                    { text: '内容体系术语表', link: '/zh/standards/content-system/glossary' },
-                    { text: '内容定位规范', link: '/zh/standards/content-system/content-positioning-standard' },
-                    { text: '文件命名规范', link: '/zh/standards/content-system/file-naming-convention' },
-                    { text: 'Explanation撰写标准', link: '/zh/standards/content-system/writing-explanation-standard' },
-                    { text: 'How-to撰写标准', link: '/zh/standards/content-system/writing-howto-standard' },
-                    { text: 'Reference撰写标准', link: '/zh/standards/content-system/writing-reference-standard' },
-                    { text: 'Tutorial撰写标准', link: '/zh/standards/content-system/writing-tutorial-standard' },
-                    { text: '术语表撰写规范', link: '/zh/standards/content-system/glossary-writing-standard' }
+                    { text: '内容体系术语表', link: '/zh/practice/content-system/glossary' },
+                    { text: '内容定位规范', link: '/zh/practice/content-system/content-positioning-standard' },
+                    { text: '文件命名规范', link: '/zh/practice/content-system/file-naming-convention' },
+                    { text: 'Explanation撰写标准', link: '/zh/practice/content-system/writing-explanation-standard' },
+                    { text: 'How-to撰写标准', link: '/zh/practice/content-system/writing-howto-standard' },
+                    { text: 'Reference撰写标准', link: '/zh/practice/content-system/writing-reference-standard' },
+                    { text: 'Tutorial撰写标准', link: '/zh/practice/content-system/writing-tutorial-standard' },
+                    { text: '术语表撰写规范', link: '/zh/practice/content-system/glossary-writing-standard' }
                   ]
                 }
               ]
