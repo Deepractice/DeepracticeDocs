@@ -152,17 +152,20 @@ Deepractice内容体系的核心概念定义，帮助理解和使用我们的文
 ## 易混淆术语组
 
 ### 协议、规范、标准
+
 **协议（Protocol）**：定义交互规则和通信约定
 **规范（Standards/Specification）**：定义执行方式和实施细则
 **标准（Standards）**：协议和规范的统称，都是某种标准  
 **实践（Practice）**：在Deepractice 4P体系中，Practice层更强调来自真实经验的最佳实践
 
 ### 模式、Pattern、设计模式
+
 **模式（中文）**：Pattern的中文翻译
 **Pattern（层级）**：4P模式的第一层
 **设计模式**：软件工程中的Design Pattern，不同概念
 
 ### Standards、Specification、Practice
+
 **Standards**：更强调"标准化"
 **Specification**：更强调"规格说明"
 **Practice**：更强调"实践经验"，来自真实场景的最佳实践
