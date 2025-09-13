@@ -142,7 +142,8 @@ export default withMermaid(
                     { text: 'How-to撰写规范', link: '/zh/practice/content-system/writing-howto-standard' },
                     { text: 'Reference撰写规范', link: '/zh/practice/content-system/writing-reference-standard' },
                     { text: 'Tutorial撰写规范', link: '/zh/practice/content-system/writing-tutorial-standard' },
-                    { text: '术语表撰写规范', link: '/zh/practice/content-system/glossary-writing-standard' }
+                    { text: '术语表撰写规范', link: '/zh/practice/content-system/glossary-writing-standard' },
+                    { text: '内容演进规范', link: '/zh/practice/content-system/content-evolution-standard' }
                   ]
                 }
               ]
