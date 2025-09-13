@@ -410,8 +410,8 @@ frontend-developer-assistant.prompt
 
 ## 未来发展
 
-- 引入 <meta> 标签定义元信息
-- 引入 <llm> <mcp> <tool> <rag> 等 agent 组装和交互要素
+- 引入 `<meta>` 标签定义元信息
+- 引入 `<llm>` `<mcp>` `<tool>` `<rag>` 等 agent 组装和交互要素
 - 开发可视化，解释器，IDE插件等配套工具
 - 定义 dpml schema的 xsd 规则
 - 基于 dpml 开发 prompt 管理系统，包含文件管理，版本管理，prompt 测试体系，prompt 领域模板库
