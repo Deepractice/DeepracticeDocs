@@ -71,30 +71,39 @@ export default withMermaid(
       themeConfig: {
         nav: [
           { text: '首页', link: '/zh/' },
+          { text: '模式', link: '/zh/patterns/' },
+          { text: '协议', link: '/zh/protocols/' },
           { text: '规范', link: '/zh/standards/' },
-          { text: '项目', link: '/zh/projects/' },
           { text: '产品', link: '/zh/products/' },
           { text: '博客', link: '/zh/blog/' },
           { text: '关于', link: '/zh/about' }
         ],
 
         sidebar: {
-          '/zh/projects/': [
+          '/zh/patterns/': [
             {
-              text: '项目',
+              text: '模式（Pattern）',
               items: [
-                { text: '概览', link: '/zh/projects/' },
-                { text: '项目A', link: '/zh/projects/project-a' },
-                { text: '项目B', link: '/zh/projects/project-b' }
+                { text: '概览', link: '/zh/patterns/' },
+                { text: '理解ISSUE协作范式', link: '/zh/patterns/issue-paradigm' }
+              ]
+            }
+          ],
+          '/zh/protocols/': [
+            {
+              text: '协议（Protocol）',
+              items: [
+                { text: '概览', link: '/zh/protocols/' },
+                { text: 'DPML协议规范', link: '/zh/protocols/issue-dpml-protocol' }
               ]
             }
           ],
           '/zh/products/': [
             {
-              text: '产品',
+              text: '产品（Instance）',
               items: [
                 { text: '概览', link: '/zh/products/' },
-                { text: 'coming soon...', link: '/zh/products/product-1' },
+                { text: '实例文档', link: '/zh/products/instances' }
               ]
             }
           ],
@@ -110,56 +119,15 @@ export default withMermaid(
           ],
           '/zh/standards/': [
             {
-              text: '规范',
+              text: '规范（Schema）',
               items: [
-                { text: '概述', link: '/zh/standards/' },
-                { text: '版本兼容性矩阵', link: '/zh/standards/compatibility' },
+                { text: '概览', link: '/zh/standards/' },
                 {
-                  text: '文档撰写规范',
+                  text: '内容体系规范',
                   collapsed: false,
                   items: [
-                    { text: '总览', link: '/zh/standards/documentation/' },
-                    { text: '文档结构', link: '/zh/standards/documentation/structure' },
-                    { text: '命名规范', link: '/zh/standards/documentation/naming' },
-                    { text: '内容规范', link: '/zh/standards/documentation/content' }
-                  ]
-                },
-                {
-                  text: 'Monorepo 基础架构规范',
-                  collapsed: false,
-                  items: [
-                    { text: '总览', link: '/zh/standards/monorepo/' },
-                    { text: '快速开始', link: '/zh/standards/monorepo/quick-start' },
-                    { text: '项目初始化', link: '/zh/standards/monorepo/initialization' },
-                    { text: '开发环境配置', link: '/zh/standards/monorepo/environment' },
-                    { text: '工作区配置', link: '/zh/standards/monorepo/workspace' },
-                    { text: '工程化规范', link: '/zh/standards/monorepo/engineering' }
-                  ]
-                },
-                {
-                  text: 'TypeScript 编码规范',
-                  collapsed: false,
-                  items: [
-                    { text: '总览', link: '/zh/standards/typescript/' },
-                    { text: '配置规范', link: '/zh/standards/typescript/config' },
-                    { text: '命名规范', link: '/zh/standards/typescript/naming' },
-                    { text: '类型系统', link: '/zh/standards/typescript/type-system' },
-                    { text: '编码风格', link: '/zh/standards/typescript/coding-style' },
-                    { text: '高级特性', link: '/zh/standards/typescript/patterns' },
-                    { text: '开发工具', link: '/zh/standards/typescript/toolchain' }
-                  ]
-                },
-                {
-                  text: 'Git 工作流规范',
-                  collapsed: false,
-                  items: [
-                    { text: '总览', link: '/zh/standards/git/' },
-                    { text: '分支管理', link: '/zh/standards/git/branch-management' },
-                    { text: '提交规范', link: '/zh/standards/git/commit-convention' },
-                    { text: '协作流程', link: '/zh/standards/git/collaboration' },
-                    { text: '版本发布', link: '/zh/standards/git/release' },
-                    { text: '命令行工具', link: '/zh/standards/git/commands' },
-                    { text: '工具配置', link: '/zh/standards/git/tooling' }
+                    { text: '理解内容体系', link: '/zh/standards/content-system/understanding-content-system' },
+                    { text: 'Explanation写作规范', link: '/zh/standards/content-system/explanation-writing-guide' }
                   ]
                 }
               ]
