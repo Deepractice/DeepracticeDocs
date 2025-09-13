@@ -1,6 +1,8 @@
 import { defineConfig } from 'vitepress'
+import { withMermaid } from 'vitepress-plugin-mermaid'
 
-export default defineConfig({
+export default withMermaid(
+  defineConfig({
   title: 'Deepractice Docs',
   description: '深度实践技术文档中心 - 让AI触手可及 | Make AI at your fingertips',
   
@@ -277,5 +279,30 @@ export default defineConfig({
         returnToTopLabel: 'Return to top'
       }
     }
+  },
+  
+  // Markdown配置
+  markdown: {
+    config: (md) => {
+      // 使用其他markdown-it插件
+    }
+  },
+  
+  // Vite配置 - 解决依赖问题
+  vite: {
+    optimizeDeps: {
+      include: ['@braintree/sanitize-url', 'mermaid']
+    },
+    resolve: {
+      alias: {
+        'dayjs': 'dayjs/'
+      }
+    }
+  },
+  
+  // Mermaid配置
+  mermaid: {
+    theme: 'default'
   }
 })
+)

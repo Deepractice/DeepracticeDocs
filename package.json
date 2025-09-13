@@ -20,6 +20,9 @@
   },
   "homepage": "https://github.com/Deepractice/DeepracticeDocs#readme",
   "devDependencies": {
-    "vitepress": "^1.6.4"
+    "@mermaid-js/mermaid-mindmap": "^9.3.0",
+    "mermaid": "^10.9.1",
+    "vitepress": "^1.6.4",
+    "vitepress-plugin-mermaid": "^2.0.17"
   }
 }
