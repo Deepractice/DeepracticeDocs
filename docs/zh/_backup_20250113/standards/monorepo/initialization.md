@@ -238,7 +238,8 @@ indent_style = tab
 ### 4.2 Git 配置
 
 #### 4.2.1 创建 .gitignore
-```gitignore
+```bash
+# .gitignore 文件
 # Dependencies
 node_modules/
 .pnp
@@ -288,7 +289,8 @@ temp/
 ```
 
 #### 4.2.2 创建 .gitattributes
-```gitattributes
+```bash
+# .gitattributes 文件
 # Auto detect text files
 * text=auto
 
