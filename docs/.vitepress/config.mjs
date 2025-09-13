@@ -85,7 +85,14 @@ export default withMermaid(
               text: '模式（Pattern）',
               items: [
                 { text: '概览', link: '/zh/patterns/' },
-                { text: '理解ISSUE协作范式', link: '/zh/patterns/issue-paradigm' }
+                { text: '理解ISSUE协作范式', link: '/zh/patterns/issue-paradigm' },
+                {
+                  text: '内容体系',
+                  collapsed: false,
+                  items: [
+                    { text: '理解Deepractice内容体系', link: '/zh/patterns/content-system/understanding-content-system' }
+                  ]
+                }
               ]
             }
           ],
@@ -126,8 +133,14 @@ export default withMermaid(
                   text: '内容体系规范',
                   collapsed: false,
                   items: [
-                    { text: '理解内容体系', link: '/zh/standards/content-system/understanding-content-system' },
-                    { text: 'Explanation写作规范', link: '/zh/standards/content-system/explanation-writing-guide' }
+                    { text: '内容体系术语表', link: '/zh/standards/content-system/glossary' },
+                    { text: '内容定位规范', link: '/zh/standards/content-system/content-positioning-standard' },
+                    { text: '文件命名规范', link: '/zh/standards/content-system/file-naming-convention' },
+                    { text: 'Explanation撰写标准', link: '/zh/standards/content-system/writing-explanation-standard' },
+                    { text: 'How-to撰写标准', link: '/zh/standards/content-system/writing-howto-standard' },
+                    { text: 'Reference撰写标准', link: '/zh/standards/content-system/writing-reference-standard' },
+                    { text: 'Tutorial撰写标准', link: '/zh/standards/content-system/writing-tutorial-standard' },
+                    { text: '术语表撰写规范', link: '/zh/standards/content-system/glossary-writing-standard' }
                   ]
                 }
               ]
