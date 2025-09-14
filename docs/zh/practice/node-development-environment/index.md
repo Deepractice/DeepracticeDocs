@@ -15,24 +15,24 @@ tags:
   - 最佳实践
 
 # 目录级 PSO
-purpose: 定义和规范 Node.js 生态的开发环境搭建、配置和管理实践
+purpose: 为组织成员（人和AI）提供统一的 Node.js 开发标准，减少环境配置决策，提升协作效率
 scope:
   includes:
-    - Node.js 环境管理和配置
-    - TypeScript 开发规范
-    - 包管理和依赖管理（pnpm为主）
-    - Monorepo 项目组织
-    - Node.js 工具链集成
-    - 开发流程优化
+    - Node.js 环境的标准化配置方案
+    - TypeScript 项目的统一开发规范
+    - 包管理和依赖的标准化流程
+    - Monorepo 的标准组织模式
+    - 工具链的统一配置模板
+    - 团队协作的共同约定
   excludes:
-    - 其他语言开发环境  # Python、Go、Rust 等
-    - 生产环境部署      # DevOps 实践领域
-    - 前端框架具体实现   # 产品层内容
+    - 业务逻辑实现细节  # 让团队专注于此
+    - 个人偏好的编码风格  # 由工具自动处理
+    - 特定框架的使用方法  # 属于Products层
 outcome:
-  - 能够快速搭建标准化的 Node.js 开发环境
-  - 掌握 TypeScript + Node.js 的最佳实践
-  - 理解现代 Node.js 项目组织模式
-  - 提高 JavaScript/TypeScript 开发效率和代码质量
+  - 新成员（人或AI）能快速搭建一致的开发环境
+  - 团队成员遵循相同的开发模式，降低协作成本
+  - 开发者能专注于业务逻辑而非环境配置
+  - 项目间能共享配置和最佳实践
 ---
 
 # Node.js 开发环境规范
