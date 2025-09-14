@@ -11,6 +11,19 @@ tags:
   - 文档规范
   - 命名规范
   - 文件管理
+purpose: 定义文档文件的标准命名规则
+scope:
+  includes:
+    - 各类型文档命名模式
+    - 通用命名规则
+    - 特殊情况处理
+  excludes:
+    - 代码文件命名: → /practice/development-environment/
+    - 资源文件命名: → /practice/asset-management/
+outcome:
+  - 能准确识别文档类型
+  - 能保持命名一致性
+  - 能避免命名冲突
 ---
 
 # 文档文件命名规范

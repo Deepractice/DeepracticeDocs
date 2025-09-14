@@ -11,6 +11,19 @@ tags:
   - 术语表
   - 内容体系
   - Reference
+purpose: 定义内容体系的核心概念和术语
+scope:
+  includes:
+    - 4P模式相关术语
+    - Diátaxis框架术语
+    - 文档定位术语
+  excludes:
+    - 技术实现术语: → /practice/technical-glossary.md
+    - 业务领域术语: → 各领域术语表
+outcome:
+  - 能准确理解体系核心概念
+  - 能消除概念歧义
+  - 能正确使用专业术语
 ---
 
 # 内容体系术语表
