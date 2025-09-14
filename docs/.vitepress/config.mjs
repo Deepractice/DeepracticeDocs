@@ -91,7 +91,7 @@ export default withMermaid(
                   collapsed: false,
                   items: [
                     { text: '理解 Deepractice 4P 内容分层模式', link: '/zh/patterns/content-system/deepractice-4p-model' },
-                    { text: 'Deepractice 内容体系 — 4P × Diátaxis', link: '/zh/patterns/content-system/understanding-content-system' }
+                    { text: 'Deepractice 内容体系 — 4P × Diátaxis × PSO', link: '/zh/patterns/content-system/understanding-content-system' }
                   ]
                 }
               ]
@@ -144,6 +144,22 @@ export default withMermaid(
                     { text: 'Tutorial撰写规范', link: '/zh/practice/content-system/writing-tutorial-standard' },
                     { text: '术语表撰写规范', link: '/zh/practice/content-system/glossary-writing-standard' },
                     { text: '内容演进规范', link: '/zh/practice/content-system/content-evolution-standard' }
+                  ]
+                },
+                {
+                  text: '开发环境',
+                  collapsed: false,
+                  items: [
+                    {
+                      text: 'Monorepo',
+                      collapsed: true,
+                      items: [
+                        { text: 'Monorepo 基础架构规范', link: '/zh/practice/development-environment/monorepo/monorepo-standard' },
+                        { text: 'Monorepo 配置模板集', link: '/zh/practice/development-environment/monorepo/monorepo-configuration' },
+                        { text: '如何初始化生产级 Monorepo', link: '/zh/practice/development-environment/monorepo/how-to-initialize-monorepo' },
+                        { text: '理解 Monorepo 架构', link: '/zh/practice/development-environment/monorepo/understanding-monorepo-architecture' }
+                      ]
+                    }
                   ]
                 }
               ]
