@@ -1,6 +1,6 @@
 ---
 layer: Practice
-type: Reference
+type: Index
 title: Monorepo 实践标准
 category: development-environment
 status: published
@@ -12,8 +12,6 @@ tags:
   - pnpm
   - Turborepo
   - 项目管理
-
-# 目录级 PSO
 purpose: 提供 Monorepo 开发模式的完整实践标准
 scope:
   includes:

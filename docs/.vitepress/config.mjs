@@ -2,6 +2,24 @@ import { defineConfig } from 'vitepress'
 import { withMermaid } from 'vitepress-plugin-mermaid'
 import { generateSidebar } from 'vitepress-sidebar'
 
+// 定义文档类型排序优先级
+const typeOrder = {
+  'Index': 1,
+  'Tutorial': 2,
+  'How-to': 3,
+  'Reference': 4,
+  'Explanation': 5
+};
+
+// 自定义排序函数
+const sortByType = (a, b) => {
+  const aType = a.frontmatter?.type || 'Reference';
+  const bType = b.frontmatter?.type || 'Reference';
+  const aOrder = typeOrder[aType] || 999;
+  const bOrder = typeOrder[bType] || 999;
+  return aOrder - bOrder;
+};
+
 // 自动生成中文侧边栏
 const zhSidebar = generateSidebar([
   {
@@ -11,7 +29,13 @@ const zhSidebar = generateSidebar([
     useTitleFromFrontmatter: true,
     useTitleFromFileHeading: true,
     useFolderTitleFromIndexFile: true,
-    folderLinkNotIncludesFileName: true,
+    folderLinkNotIncludesFileName: false,
+    includeFolderIndexFile: true,
+    sortMenusByFrontmatterOrder: false,
+    sortMenusOrderByDescending: false,
+    sortMenusOrderNumericallyFromTitle: false,
+    manualSortFileNameByPriority: ['index.md'],
+    rootGroupText: '概览',
     hyphenToSpace: true,
     underscoreToSpace: true,
     capitalizeFirst: false,
@@ -25,7 +49,13 @@ const zhSidebar = generateSidebar([
     useTitleFromFrontmatter: true,
     useTitleFromFileHeading: true,
     useFolderTitleFromIndexFile: true,
-    folderLinkNotIncludesFileName: true,
+    folderLinkNotIncludesFileName: false,
+    includeFolderIndexFile: true,
+    sortMenusByFrontmatterOrder: false,
+    sortMenusOrderByDescending: false,
+    sortMenusOrderNumericallyFromTitle: false,
+    manualSortFileNameByPriority: ['index.md'],
+    rootGroupText: '概览',
     hyphenToSpace: true,
     underscoreToSpace: true,
     capitalizeFirst: false,
@@ -39,7 +69,13 @@ const zhSidebar = generateSidebar([
     useTitleFromFrontmatter: true,
     useTitleFromFileHeading: true,
     useFolderTitleFromIndexFile: true,
-    folderLinkNotIncludesFileName: true,
+    folderLinkNotIncludesFileName: false,
+    includeFolderIndexFile: true,
+    sortMenusByFrontmatterOrder: false,
+    sortMenusOrderByDescending: false,
+    sortMenusOrderNumericallyFromTitle: false,
+    manualSortFileNameByPriority: ['index.md'],
+    rootGroupText: '概览',
     hyphenToSpace: true,
     underscoreToSpace: true,
     capitalizeFirst: false,
@@ -53,14 +89,20 @@ const zhSidebar = generateSidebar([
     useTitleFromFrontmatter: true,
     useTitleFromFileHeading: true,
     useFolderTitleFromIndexFile: true,
-    folderLinkNotIncludesFileName: true,
+    folderLinkNotIncludesFileName: false,
+    includeFolderIndexFile: true,
+    sortMenusByFrontmatterOrder: false,
+    sortMenusOrderByDescending: false,
+    sortMenusOrderNumericallyFromTitle: false,
+    manualSortFileNameByPriority: ['index.md'],
+    rootGroupText: '概览',
     hyphenToSpace: true,
     underscoreToSpace: true,
     capitalizeFirst: false,
     collapsed: true,
     collapseDepth: 2
   }
-])
+]);
 
 export default withMermaid(
   defineConfig({

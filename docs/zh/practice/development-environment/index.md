@@ -1,6 +1,6 @@
 ---
 layer: Practice
-type: Reference
+type: Index
 title: 开发环境实践
 category: development-environment
 status: published

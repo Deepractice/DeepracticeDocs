@@ -1,6 +1,6 @@
 ---
 layer: Practice
-type: Reference
+type: Index
 title: 内容体系规范
 category: content-system
 status: published
