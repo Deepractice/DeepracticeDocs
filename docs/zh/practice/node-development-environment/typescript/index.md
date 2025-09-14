@@ -14,24 +14,24 @@ tags:
   - 最佳实践
 
 # 目录级 PSO
-purpose: 提供 TypeScript 在 Node.js 环境中的完整开发规范和最佳实践
+purpose: 为组织成员提供 TypeScript 项目的统一开发规范，确保类型安全和代码质量
 scope:
   includes:
-    - TypeScript 编译器配置（tsconfig.json）
-    - 类型系统使用规范
-    - 代码组织和模块化策略
-    - 类型声明文件管理
-    - 与 Node.js 生态的集成
-    - 构建和编译优化
+    - TypeScript 编译器的标准化配置
+    - 类型定义的统一规范
+    - tsconfig.json 配置模板
+    - 类型检查的标准流程
+    - TypeScript 与工具链集成
+    - 团队协作的类型约定
   excludes:
-    - 具体框架的 TypeScript 用法  # 属于产品层
-    - JavaScript 基础语法         # 基础知识范畴
-    - 前端特定的 TypeScript 配置   # 前端实践领域
+    - JavaScript 语法教学  # 基础知识
+    - 具体框架的类型定义  # 属于框架文档
+    - 业务逻辑类型设计  # 属于项目自身
 outcome:
-  - 能够正确配置 TypeScript 项目
-  - 掌握 TypeScript 类型系统的高级用法
-  - 理解 TypeScript 与 Node.js 的最佳集成方式
-  - 编写类型安全且可维护的代码
+  - 团队使用一致的 TypeScript 配置
+  - 类型安全得到有效保障
+  - 开发者能专注于业务逻辑而非配置调试
+  - 项目间能共享类型定义和配置
 ---
 
 # TypeScript 开发规范
