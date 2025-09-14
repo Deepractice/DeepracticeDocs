@@ -23,6 +23,7 @@
     "@mermaid-js/mermaid-mindmap": "^9.3.0",
     "mermaid": "^10.9.1",
     "vitepress": "^1.6.4",
-    "vitepress-plugin-mermaid": "^2.0.17"
+    "vitepress-plugin-mermaid": "^2.0.17",
+    "vitepress-sidebar": "^1.33.0"
   }
 }

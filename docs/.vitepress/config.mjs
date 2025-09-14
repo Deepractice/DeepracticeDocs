@@ -1,5 +1,58 @@
 import { defineConfig } from 'vitepress'
 import { withMermaid } from 'vitepress-plugin-mermaid'
+import { generateSidebar } from 'vitepress-sidebar'
+
+// 自动生成中文侧边栏
+const zhSidebar = generateSidebar([
+  {
+    documentRootPath: 'docs',
+    scanStartPath: 'zh/patterns',
+    resolvePath: '/zh/patterns/',
+    useTitleFromFrontmatter: true,
+    useTitleFromFileHeading: true,
+    hyphenToSpace: true,
+    underscoreToSpace: true,
+    capitalizeFirst: false,
+    collapsed: true,
+    collapseDepth: 2
+  },
+  {
+    documentRootPath: 'docs',
+    scanStartPath: 'zh/protocols',
+    resolvePath: '/zh/protocols/',
+    useTitleFromFrontmatter: true,
+    useTitleFromFileHeading: true,
+    hyphenToSpace: true,
+    underscoreToSpace: true,
+    capitalizeFirst: false,
+    collapsed: true,
+    collapseDepth: 2
+  },
+  {
+    documentRootPath: 'docs',
+    scanStartPath: 'zh/practice',
+    resolvePath: '/zh/practice/',
+    useTitleFromFrontmatter: true,
+    useTitleFromFileHeading: true,
+    hyphenToSpace: true,
+    underscoreToSpace: true,
+    capitalizeFirst: false,
+    collapsed: true,
+    collapseDepth: 2
+  },
+  {
+    documentRootPath: 'docs',
+    scanStartPath: 'zh/products',
+    resolvePath: '/zh/products/',
+    useTitleFromFrontmatter: true,
+    useTitleFromFileHeading: true,
+    hyphenToSpace: true,
+    underscoreToSpace: true,
+    capitalizeFirst: false,
+    collapsed: true,
+    collapseDepth: 2
+  }
+])
 
 export default withMermaid(
   defineConfig({
@@ -79,94 +132,7 @@ export default withMermaid(
           { text: '关于', link: '/zh/about' }
         ],
 
-        sidebar: {
-          '/zh/patterns/': [
-            {
-              text: '模式（Pattern）',
-              items: [
-                { text: '概览', link: '/zh/patterns/' },
-                { text: '理解ISSUE协作范式', link: '/zh/patterns/issue-paradigm' },
-                {
-                  text: '内容体系',
-                  collapsed: false,
-                  items: [
-                    { text: '理解 Deepractice 4P 内容分层模式', link: '/zh/patterns/content-system/deepractice-4p-model' },
-                    { text: 'Deepractice 内容体系 — 4P × Diátaxis × PSO', link: '/zh/patterns/content-system/understanding-content-system' }
-                  ]
-                }
-              ]
-            }
-          ],
-          '/zh/protocols/': [
-            {
-              text: '协议（Protocol）',
-              items: [
-                { text: '概览', link: '/zh/protocols/' },
-                { text: 'DPML协议规范', link: '/zh/protocols/issue-dpml-protocol' }
-              ]
-            }
-          ],
-          '/zh/products/': [
-            {
-              text: '产品（Instance）',
-              items: [
-                { text: '概览', link: '/zh/products/' },
-                { text: '实例文档', link: '/zh/products/instances' }
-              ]
-            }
-          ],
-          '/zh/blog/': [
-            {
-              text: '博客文章',
-              items: [
-                { text: '最新文章', link: '/zh/blog/' },
-                { text: '技术分享', link: '/zh/blog/tech' },
-                { text: '团队动态', link: '/zh/blog/team' }
-              ]
-            }
-          ],
-          '/zh/practice/': [
-            {
-              text: '实践（Practice）',
-              items: [
-                { text: '概览', link: '/zh/practice/' },
-                {
-                  text: '内容体系规范',
-                  collapsed: false,
-                  items: [
-                    { text: '内容体系术语表', link: '/zh/practice/content-system/glossary' },
-                    { text: '内容定位规范', link: '/zh/practice/content-system/content-positioning-standard' },
-                    { text: '目录索引规范', link: '/zh/practice/content-system/directory-index-standard' },
-                    { text: '文件命名规范', link: '/zh/practice/content-system/file-naming-convention' },
-                    { text: '文档校验规范', link: '/zh/practice/content-system/document-validation-standard' },
-                    { text: 'Explanation撰写规范', link: '/zh/practice/content-system/writing-explanation-standard' },
-                    { text: 'How-to撰写规范', link: '/zh/practice/content-system/writing-howto-standard' },
-                    { text: 'Reference撰写规范', link: '/zh/practice/content-system/writing-reference-standard' },
-                    { text: 'Tutorial撰写规范', link: '/zh/practice/content-system/writing-tutorial-standard' },
-                    { text: '术语表撰写规范', link: '/zh/practice/content-system/glossary-writing-standard' },
-                    { text: '内容演进规范', link: '/zh/practice/content-system/content-evolution-standard' }
-                  ]
-                },
-                {
-                  text: '开发环境',
-                  collapsed: false,
-                  items: [
-                    {
-                      text: 'Monorepo',
-                      collapsed: true,
-                      items: [
-                        { text: 'Monorepo 基础架构规范', link: '/zh/practice/development-environment/monorepo/monorepo-standard' },
-                        { text: 'Monorepo 配置模板集', link: '/zh/practice/development-environment/monorepo/monorepo-configuration' },
-                        { text: '如何初始化生产级 Monorepo', link: '/zh/practice/development-environment/monorepo/how-to-initialize-monorepo' },
-                        { text: '理解 Monorepo 架构', link: '/zh/practice/development-environment/monorepo/understanding-monorepo-architecture' }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
+        sidebar: zhSidebar,
 
         footer: {
           message: '基于 MIT 许可发布',
