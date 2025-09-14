@@ -2,7 +2,7 @@
 layer: Practice
 type: Reference
 title: Monorepo 基础架构规范
-category: development-environment
+category: node-development-environment
 status: published
 version: 1.1.0
 date: 2025-01-14
@@ -28,7 +28,7 @@ outcome:
   - 掌握项目结构组织原则
   - 能够做出架构决策
 dependencies:
-  - /zh/practice/development-environment/nodejs-setup
+  - /zh/practice/node-development-environment/nodejs/
 related:
   - ./monorepo-configuration.md
   - ./understanding-monorepo-architecture.md

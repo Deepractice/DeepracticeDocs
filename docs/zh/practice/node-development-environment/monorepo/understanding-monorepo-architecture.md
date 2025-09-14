@@ -2,7 +2,7 @@
 layer: Practice
 type: Explanation
 title: 理解 Monorepo 架构
-category: development-environment
+category: node-development-environment
 status: published
 version: 1.1.0
 date: 2025-01-14

@@ -64,16 +64,16 @@ Practice层专注于**特定领域的最佳实践**，这些实践：
 - [术语表撰写规范](./content-system/glossary-writing-standard.md) - 如何编写标准化的术语表
 - [内容演进规范](./content-system/content-evolution-standard.md) - 文档持续改进的PDCA方法
 
-## 💻 开发环境实践
+## 💻 Node.js 开发环境实践
 
-软件开发环境配置和管理的最佳实践。
+Node.js 生态的开发环境配置和管理最佳实践。
 
 ### Monorepo实践
 
-- [Monorepo架构理解](./development-environment/monorepo/understanding-monorepo-architecture.md) - 理解Monorepo的核心概念
-- [Monorepo初始化指南](./development-environment/monorepo/how-to-initialize-monorepo.md) - 如何从零开始创建Monorepo
-- [Monorepo配置参考](./development-environment/monorepo/monorepo-configuration.md) - 详细的配置项说明
-- [Monorepo管理规范](./development-environment/monorepo/monorepo-standard.md) - 日常管理和维护标准
+- [Monorepo架构理解](./node-development-environment/monorepo/understanding-monorepo-architecture.md) - 理解Monorepo的核心概念
+- [Monorepo初始化指南](./node-development-environment/monorepo/how-to-initialize-monorepo.md) - 如何从零开始创建Monorepo
+- [Monorepo配置参考](./node-development-environment/monorepo/monorepo-configuration.md) - 详细的配置项说明
+- [Monorepo管理规范](./node-development-environment/monorepo/monorepo-standard.md) - 日常管理和维护标准
 
 ## 实践原则
 
@@ -91,13 +91,14 @@ Practice层专注于**特定领域的最佳实践**，这些实践：
 
 ```
 Practice/
-├── content-system/          # 内容体系实践
+├── content-system/                  # 内容体系实践
 │   ├── 基础规范/
 │   ├── 写作规范/
 │   └── 专项规范/
-├── development-environment/ # 开发环境实践
-│   └── monorepo/           # Monorepo专项
-└── [更多领域]/             # 持续扩展中
+├── node-development-environment/    # Node.js 开发环境实践
+│   ├── monorepo/                   # Monorepo专项
+│   └── typescript/                 # TypeScript专项
+└── [更多领域]/                     # 持续扩展中
 ```
 
 ## 使用指南

@@ -2,7 +2,7 @@
 layer: Practice
 type: Reference
 title: Monorepo 配置模板集
-category: development-environment
+category: node-development-environment
 status: published
 version: 2.1.0
 date: 2025-01-14

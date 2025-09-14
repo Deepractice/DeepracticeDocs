@@ -124,8 +124,20 @@ export default withMermaid(
     ['link', { rel: 'canonical', href: 'https://docs.deepractice.ai' }]
   ],
   
-  // 忽略死链接检查
+  // 死链接检查配置
+  // 暂时忽略所有死链接，待文档完善后再启用检查
   ignoreDeadLinks: true,
+  // TODO: 未来改为选择性忽略
+  // ignoreDeadLinks: [
+  //   // 忽略备份目录
+  //   /.*_backup_.*/,
+  //   // 忽略英文文档（待完善）
+  //   /^\/en\//,
+  //   // 忽略还未创建的文档
+  //   /typescript-configuration/,
+  //   /typescript-best-practices/,
+  //   /how-to-setup-typescript/
+  // ],
   
   // 主题配置
   themeConfig: {

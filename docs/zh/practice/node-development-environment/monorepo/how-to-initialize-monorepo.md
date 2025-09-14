@@ -2,7 +2,7 @@
 layer: Practice
 type: How-to
 title: 如何初始化生产级 Monorepo
-category: development-environment
+category: node-development-environment
 status: published
 version: 2.1.0
 date: 2025-01-14
@@ -30,7 +30,7 @@ outcome:
   - 能够添加新的包和应用
 dependencies:
   - ./monorepo-standard.md
-  - /zh/practice/development-environment/nodejs-setup
+  - /zh/practice/node-development-environment/nodejs/
 related:
   - ./monorepo-configuration.md
   - ./understanding-monorepo-architecture.md

@@ -2,7 +2,7 @@
 layer: Practice
 type: Index
 title: Monorepo 实践标准
-category: development-environment
+category: node-development-environment
 status: published
 version: 1.0.0
 date: 2025-01-14
@@ -22,9 +22,9 @@ scope:
     - 构建优化策略
     - Monorepo 特有的 CI/CD 优化
   excludes:
-    - 通用 TypeScript 配置: → /zh/practice/development-environment/typescript/
-    - Node.js 环境设置: → /zh/practice/development-environment/nodejs/
-    - 通用 Git 操作: → /zh/practice/development-environment/git/
+    - 通用 TypeScript 配置: → /zh/practice/node-development-environment/typescript/
+    - Node.js 环境设置: → /zh/practice/node-development-environment/nodejs/
+    - 通用 Git 操作: → /zh/practice/version-control/git/
 outcome:
   - 能够评估是否适合采用 Monorepo
   - 能够搭建生产级 Monorepo 项目
@@ -156,7 +156,7 @@ A: 利用 Turborepo 的缓存机制，只构建和测试变更的部分。
 ## 相关资源
 
 ### 内部文档
-- [TypeScript 配置规范](/zh/practice/development-environment/typescript/)（计划中）
+- [TypeScript 配置规范](/zh/practice/node-development-environment/typescript/)（计划中）
 - [CI/CD 最佳实践](/zh/practice/devops/ci-cd/)（计划中）
 
 ### 外部资源
