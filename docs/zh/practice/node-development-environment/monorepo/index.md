@@ -22,9 +22,9 @@ scope:
     - 构建优化策略
     - Monorepo 特有的 CI/CD 优化
   excludes:
-    - 通用 TypeScript 配置: → /zh/practice/node-development-environment/typescript/
-    - Node.js 环境设置: → /zh/practice/node-development-environment/nodejs/
-    - 通用 Git 操作: → /zh/practice/version-control/git/
+    - 通用 TypeScript 配置  # 独立的 TypeScript 规范
+    - Node.js 环境设置      # 独立的 Node.js 规范
+    - 通用 Git 操作         # 版本控制规范
 outcome:
   - 能够评估是否适合采用 Monorepo
   - 能够搭建生产级 Monorepo 项目

@@ -25,9 +25,9 @@ scope:
     - Git Hooks 配置（Lefthook）
     - CI/CD 配置示例
   excludes:
-    - 配置原理解释（→ understanding-monorepo-architecture.md）
-    - 技术选型理由（→ monorepo-standard.md）
-    - 业务代码示例
+    - 配置原理解释  # 属于理念解释
+    - 技术选型理由  # 属于标准规范
+    - 业务代码示例  # 具体实现
 outcome:
   - 获得所有必需的配置文件
   - 能够快速搭建 Monorepo 环境

@@ -18,8 +18,8 @@ scope:
     - 通用命名规则
     - 特殊情况处理
   excludes:
-    - 代码文件命名: → /practice/development-environment/
-    - 资源文件命名: → /practice/asset-management/
+    - 代码文件命名  # 属于开发规范
+    - 资源文件命名  # 属于资源管理
 outcome:
   - 能准确识别文档类型
   - 能保持命名一致性

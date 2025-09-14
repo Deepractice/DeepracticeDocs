@@ -20,9 +20,9 @@ scope:
     - 工作区配置规范
     - 任务编排基础
   excludes:
-    - 具体配置文件内容（→ monorepo-configuration.md）
-    - 初始化操作步骤（→ how-to-initialize-monorepo.md）
-    - 架构设计理念（→ understanding-monorepo-architecture.md）
+    - 具体配置文件内容  # 属于配置模板
+    - 初始化操作步骤    # 属于 How-to 指南
+    - 架构设计理念      # 属于理念解释
 outcome:
   - 理解 Monorepo 的技术栈选择理由
   - 掌握项目结构组织原则

@@ -25,9 +25,9 @@ scope:
     - Node.js 工具链集成
     - 开发流程优化
   excludes:
-    - 其他语言开发环境: → /zh/practice/other-languages/
-    - 生产环境部署: → /zh/practice/devops/
-    - 前端框架具体实现: → /zh/products/
+    - 其他语言开发环境  # Python、Go、Rust 等
+    - 生产环境部署      # DevOps 实践领域
+    - 前端框架具体实现   # 产品层内容
 outcome:
   - 能够快速搭建标准化的 Node.js 开发环境
   - 掌握 TypeScript + Node.js 的最佳实践

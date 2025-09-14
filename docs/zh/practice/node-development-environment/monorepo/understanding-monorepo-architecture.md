@@ -21,9 +21,9 @@ scope:
     - 适用场景分析
     - 演进路径建议
   excludes:
-    - 具体配置方法（→ monorepo-configuration.md）
-    - 操作步骤（→ how-to-initialize-monorepo.md）
-    - 工具使用细节
+    - 具体配置方法  # 属于配置参考
+    - 操作步骤      # 属于 How-to 指南
+    - 工具使用细节  # 实施层面
 outcome:
   - 理解 Monorepo 的本质价值
   - 能够评估是否适合采用 Monorepo

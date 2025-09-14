@@ -24,9 +24,9 @@ scope:
     - 与 Node.js 生态的集成
     - 构建和编译优化
   excludes:
-    - 具体框架的 TypeScript 用法: → /zh/products/
-    - JavaScript 基础语法: → 外部资源
-    - 前端特定的 TypeScript 配置: → /zh/practice/frontend/
+    - 具体框架的 TypeScript 用法  # 属于产品层
+    - JavaScript 基础语法         # 基础知识范畴
+    - 前端特定的 TypeScript 配置   # 前端实践领域
 outcome:
   - 能够正确配置 TypeScript 项目
   - 掌握 TypeScript 类型系统的高级用法

@@ -21,9 +21,9 @@ scope:
     - 第一个包的创建示例
     - CI/CD 基础配置
   excludes:
-    - 配置文件详解（→ monorepo-configuration.md）
-    - 架构设计决策（→ monorepo-standard.md）
-    - 高级特性配置
+    - 配置文件详解  # 属于配置参考
+    - 架构设计决策  # 属于标准规范
+    - 高级特性配置  # 进阶内容
 outcome:
   - 完成一个生产级 Monorepo 项目初始化
   - 所有工具链正常工作
