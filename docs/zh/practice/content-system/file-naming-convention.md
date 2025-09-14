@@ -93,13 +93,13 @@ outcome:
 
 ## 特殊文件命名
 
-| 文件名 | 用途 | 说明 |
-|--------|------|------|
-| `index.md` | 目录页 | 每个目录的索引页 |
-| `readme.md` | 说明文件 | 项目或目录说明 |
-| `changelog.md` | 变更日志 | 记录版本变更 |
-| `contributing.md` | 贡献指南 | 如何贡献文档 |
-| `license.md` | 许可证 | 版权和许可信息 |
+| 文件名 | 用途 | 说明 | 文档类型 |
+|--------|------|------|----------|
+| `index.md` | 目录页 | 每个目录的索引页 | 必须使用 `type: Index` |
+| `readme.md` | 说明文件 | 项目或目录说明 | Reference |
+| `changelog.md` | 变更日志 | 记录版本变更 | Reference |
+| `contributing.md` | 贡献指南 | 如何贡献文档 | How-to |
+| `license.md` | 许可证 | 版权和许可信息 | Reference |
 
 ## 层级特定命名建议
 

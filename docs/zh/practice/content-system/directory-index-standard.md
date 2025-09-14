@@ -37,6 +37,17 @@ outcome:
 2. **提供内容导航** - 组织和展示目录内的文档
 3. **说明组织逻辑** - 解释为什么这些内容在一起
 
+## Index 类型说明
+
+`Index` 是专门为目录索引页（index.md）设计的文档类型：
+
+| 属性 | 说明 |
+|------|------|
+| **用途** | 仅用于各目录的 index.md 文件 |
+| **目的** | 提供目录导航和内容组织说明 |
+| **优先级** | 在 VitePress 侧边栏中排序优先（排序权重：1） |
+| **特征** | 结合了 Reference 的结构化和导航功能 |
+
 ## 核心原则
 
 | 原则 | 说明 | 要求 |
@@ -53,7 +64,7 @@ outcome:
 ```yaml
 ---
 layer: [所属层级]
-type: Reference  # 索引页通常是 Reference
+type: Index  # 目录索引页专用类型
 title: [目录标题]
 category: [分类]
 status: published
@@ -165,7 +176,7 @@ outcome:
 - [ ] 清楚说明目录的价值和用途
 - [ ] 列出所有子目录和主要文档
 - [ ] 提供使用指南或阅读顺序
-- [ ] type 设置为 Reference
+- [ ] type 设置为 Index
 
 ### 建议包含
 
@@ -188,7 +199,7 @@ outcome:
 ```markdown
 ---
 layer: [Layer]
-type: Reference
+type: Index
 title: [目录名称]
 category: [分类]
 status: published

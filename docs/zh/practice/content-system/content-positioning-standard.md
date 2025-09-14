@@ -32,14 +32,17 @@ tags:
 | **实践层** | Practice | 执行标准、最佳实践 | 如何具体执行？ |
 | **产品层** | Products | 实例、案例、实现 | 实际怎么用？ |
 
-### 维度二：类型定位（Diátaxis框架）
+### 维度二：类型定位（Diátaxis框架 + Index）
 
 | 类型 | 目的 | 读者状态 | 关键特征 |
 |------|------|----------|----------|
+| **Index** | 目录导航 | 进入目录寻找内容 | 索引页专用、导航优先、结构化展示 |
 | **Tutorial** | 学习技能 | 新手学习 | 引导练习、建立信心 |
 | **How-to** | 解决问题 | 有任务要完成 | 步骤明确、直达目标 |
 | **Explanation** | 理解原理 | 想要理解 | 概念解释、背景说明 |
 | **Reference** | 查询信息 | 需要查找 | 结构化、易检索 |
+
+**注意**：`Index` 是 Deepractice 额外定义的类型，专门用于目录的 index.md 文件，在 VitePress 导航中具有最高排序优先级。
 
 ### 维度三：目标定位（PSO框架）
 
@@ -107,7 +110,7 @@ title: 如何部署文档网站
 | 字段 | 说明 | 取值范围 |
 |------|------|----------|
 | `layer` | 所属层级 | Pattern, Protocol, Practice, Products |
-| `type` | 文档类型 | Tutorial, How-to, Explanation, Reference |
+| `type` | 文档类型 | Index, Tutorial, How-to, Explanation, Reference |
 | `title` | 文档标题 | 简洁明确的标题 |
 | `category` | 分类标签 | 所属的内容分类 |
 | `status` | 发布状态 | draft, published, deprecated |
