@@ -19,11 +19,9 @@ tags:
 
 每篇文档必须有清晰的定位，通过双重坐标系统精确定义其在内容体系中的位置和作用。
 
-## 三维定位系统
+## 双重定位系统
 
-内容定位需要从三个维度明确定义：层级（Where）、类型（How）、目标（What & Why）。
-
-### 维度一：层级定位（四层体系）
+### 纵向定位：四层体系
 
 | 层级 | 英文 | 内容类型 | 关键问题 |
 |------|------|---------|---------|
@@ -32,7 +30,7 @@ tags:
 | **实践层** | Practice | 执行标准、最佳实践 | 如何具体执行？ |
 | **产品层** | Products | 实例、案例、实现 | 实际怎么用？ |
 
-### 维度二：类型定位（Diátaxis框架）
+### 横向定位：Diátaxis类型
 
 | 类型 | 目的 | 读者状态 | 关键特征 |
 |------|------|----------|----------|
@@ -40,35 +38,6 @@ tags:
 | **How-to** | 解决问题 | 有任务要完成 | 步骤明确、直达目标 |
 | **Explanation** | 理解原理 | 想要理解 | 概念解释、背景说明 |
 | **Reference** | 查询信息 | 需要查找 | 结构化、易检索 |
-
-### 维度三：目标定位（PSO框架）
-
-每个文档需要明确定义其目标、范围和预期成果：
-
-| 要素 | 英文 | 关键问题 | 定义内容 |
-|------|------|----------|----------|
-| **目的** | Purpose | 为什么需要这个文档？ | 解决什么问题、满足什么需求 |
-| **范围** | Scope | 包含什么，不包含什么？ | 内容边界、依赖关系 |
-| **成果** | Outcome | 读者能获得什么？ | 具体能力、可验证结果 |
-
-#### PSO 示例
-
-```yaml
-# Monorepo 文档的 PSO
-purpose: 帮助团队搭建和维护高效的 Monorepo 项目结构
-scope:
-  includes:
-    - pnpm workspace 配置
-    - Turborepo 任务编排
-    - 包依赖管理
-  excludes:
-    - TypeScript 语言特性（→ TypeScript 规范）
-    - CI/CD 完整配置（→ DevOps 规范）
-outcome:
-  - 能初始化 Monorepo 项目
-  - 能配置包之间的依赖关系
-  - 能执行并行构建任务
-```
 
 ## 定位矩阵
 
@@ -122,9 +91,6 @@ title: 如何部署文档网站
 | `tags` | 标签列表 | 便于检索和分类 |
 | `dependencies` | 依赖文档 | 标注前置阅读要求 |
 | `related` | 相关文档 | 提供延伸阅读 |
-| `purpose` | 文档目的 | 明确文档解决的问题 |
-| `scope` | 内容范围 | 定义包含和排除的内容 |
-| `outcome` | 预期成果 | 描述读者能获得的能力 |
 
 ### 完整示例
 
@@ -135,26 +101,13 @@ type: Reference
 title: 内容定位规范
 category: content-system
 status: published
-version: 1.2.0
-date: 2025-01-14
+version: 1.0.0
+date: 2025-01-13
 author: Sean Jiang & Claude
 tags:
   - 文档规范
   - 内容定位
   - 元数据
-purpose: 定义文档在内容体系中的精确定位方法
-scope:
-  includes:
-    - 层级定位（4P体系）
-    - 类型定位（Diátaxis）
-    - 目标定位（PSO）
-  excludes:
-    - 具体写作规范
-    - 文档模板
-outcome:
-  - 能准确定位文档层级和类型
-  - 能定义文档目标和边界
-  - 能编写规范的元数据
 dependencies:
   - /zh/patterns/content-system/understanding-content-system
 related:
@@ -179,93 +132,12 @@ related:
 3. 要**解释概念原理**？→ Explanation
 4. 要**提供查询参考**？→ Reference
 
-### 第三步：明确 PSO
-
-1. **Purpose**：这个文档解决什么问题？
-2. **Scope**：
-   - Includes：必须包含哪些内容？
-   - Excludes：明确不包含什么？
-3. **Outcome**：读者看完能做什么？
-
-### 第四步：验证合理性
+### 第三步：验证合理性
 
 检查是否符合层级与类型的优先组合矩阵。如不符合，需要重新考虑：
 - 是否选错了层级？
 - 是否选错了类型？
 - 是否需要拆分成多篇文档？
-
-### Products层特殊判断
-
-在确定是否属于Products层时，使用以下决策树：
-
-```mermaid
-flowchart TD
-    A[内容涉及具体实现] --> B{开发主体是谁?}
-    B -->|Deepractice| C[Products层]
-    B -->|第三方| D{我们的角色?}
-    D -->|使用者| E[Practice层]
-    D -->|贡献者/维护者| F[Products层]
-    
-    E --> G[制定使用规范]
-    C --> H[说明产品功能]
-    F --> I[说明贡献内容]
-```
-
-**典型场景**：
-- ✅ Products层：PromptX使用手册、DeepracticeDocs部署指南
-- ✅ Practice层：Git工作流规范、Docker使用标准、Nginx配置规范
-- ⚠️ 边界情况：我们fork并深度定制的开源工具 → 视定制程度决定
-
-## 目录级 PSO 定义
-
-### pso.yml 文件
-
-为了管理目录级别的内容边界，每个内容目录可以包含一个 `pso.yml` 文件。
-
-#### 文件结构
-
-```yaml
-# pso.yml - 目录级 PSO 定义
-purpose: 目录的核心目标和价值
-scope:
-  includes:
-    - 包含的内容范围
-    - 负责的技术领域
-  excludes:
-    - topic_name: 不包含的内容 → /应该去的目录/
-outcome:
-  - 用户能获得的能力
-  - 可以解决的问题
-```
-
-#### 特殊字段
-
-| 字段 | 用途 | 示例 |
-|------|------|------|
-| `criteria` | 内容归属判断标准 | 必须是 Monorepo 特有的内容 |
-| `relations` | 与其他目录的关系 | dependencies, references, extends |
-| `subdirectories` | 子目录职责说明 | 各子目录的 focus 和 description |
-| `document_types` | 文档类型分布建议 | Reference 40%, Explanation 30% |
-
-#### 使用场景
-
-1. **创建新目录**：先定义 pso.yml，明确目录职责
-2. **添加新文档**：查看目录的 pso.yml，确认内容归属
-3. **内容审查**：基于 pso.yml 判断文档位置是否正确
-4. **自动化验证**：工具读取 pso.yml 进行边界检查
-
-#### 层级示例
-
-```
-/practice/
-├── pso.yml                    # Practice 层总体定义
-├── development-environment/
-│   ├── pso.yml               # 开发环境目录定义
-│   └── monorepo/
-│       ├── pso.yml           # Monorepo 子目录定义
-│       ├── monorepo-standard.md
-│       └── monorepo-configuration.md
-```
 
 ## 特殊情况处理
 
@@ -291,17 +163,6 @@ outcome:
 | 协议术语 | Protocol | 交互通信术语 |
 | 实践术语 | Practice | 执行标准术语 |
 | 产品术语 | Products | 产品功能术语 |
-
-### 定位示例对比
-
-| 内容描述 | 错误定位 | 正确定位 | 理由 |
-|---------|---------|---------|------|
-| Git工作流规范 | Products层 | Practice层 | Git是第三方工具，我们制定使用规范 |
-| PromptX用户手册 | Practice层 | Products层 | PromptX是我们的产品 |
-| VSCode配置标准 | Products层 | Practice层 | VSCode是第三方工具 |
-| DeepracticeDocs主题开发 | Practice层 | Products层 | 我们自主开发的主题 |
-| Kubernetes部署规范 | Products层 | Practice层 | K8s是第三方，我们制定部署标准 |
-| 自研CLI工具手册 | Practice层 | Products层 | 我们自主开发的工具 |
 
 ## 定位审查清单
 

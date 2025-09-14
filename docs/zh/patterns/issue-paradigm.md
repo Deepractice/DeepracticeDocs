@@ -6,7 +6,7 @@ category: collaboration
 status: published
 version: 1.0.0
 date: 2025-01-13
-author: Sean Chen & Claude
+author: Sean Jiang & Claude
 tags:
   - ISSUE方法
   - 智能协同

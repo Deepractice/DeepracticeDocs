@@ -6,7 +6,7 @@ category: content-system
 status: published
 version: 3.0.0
 date: 2025-01-13
-author: Sean Chen & Claude
+author: Sean Jiang & Claude
 tags:
   - 核心理念
   - 4P内容分层

@@ -2,7 +2,7 @@
 title: ISSUE — 基于议题的智能协同新范式
 description: Deepractice提出的ISSUE方法，通过五步流程（Initiate, Structure, Socratic, Unify, Execute）解决人与AI协作的效率悖论，实现真正的智能协同。
 date: 2025-01-12
-author: Sean Chen
+author: Sean Jiang
 tags:
   - 智能协同
   - AI协作

@@ -6,7 +6,7 @@ category: content-system
 status: published
 version: 1.0.0
 date: 2025-01-13
-author: Sean Chen & Claude
+author: Sean Jiang & Claude
 tags:
   - 内容演进
   - PDCA循环

@@ -1,5 +1,5 @@
 ---
-layer: Practice
+layer: Standards
 type: Reference
 title: Explanation 类型文档写作规范
 category: content-system
@@ -74,7 +74,6 @@ Explanation 是**理解导向**的文档，帮助读者理解概念、原理和�
 - [ ] 过度使用术语
 - [ ] 缺乏具体例子
 - [ ] 没有实际价值
-- [ ] 虚假的例子（详见下方说明）
 
 ## 文风要求
 
@@ -113,21 +112,6 @@ Explanation 是**理解导向**的文档，帮助读者理解概念、原理和�
 | **问答法** | 预设疑问并解答 | "你可能会问..." |
 | **故事法** | 用叙事引入概念 | "想象这样一个场景..." |
 
-### 关于例子的使用
-
-**虚拟 vs 虚假**：
-- ✅ **虚拟**（可以）：想象的场景，但合理真实
-  - "想象你要学开车..."
-  - "假设有一个电商网站..."
-  - "如果你正在开发一个新功能..."
-  
-- ❌ **虚假**（避免）：假装发生过的事实
-  - "去年我们整理文档时..." （除非真的发生过）
-  - "经过三个月的实践..." （除非真有数据）
-  - "用户反馈显示..." （除非真有反馈）
-
-**原则**：可以创造场景帮助理解，但不要编造事实误导读者。
-
 ## 层级特殊要求
 
 ### Pattern 层 Explanation
@@ -138,7 +122,7 @@ Explanation 是**理解导向**的文档，帮助读者理解概念、原理和�
 
 ### 其他层级
 - Protocol 层：重点解释标准制定的原因
-- Practice 层：重点解释方案选择的理由
+- Standards 层：重点解释方案选择的理由
 - Products 层：重点解释实现决策的考虑
 
 ## 检查清单
@@ -171,8 +155,7 @@ Explanation 是**理解导向**的文档，帮助读者理解概念、原理和�
 ## 参考资源
 
 - [Diátaxis - Explanation](https://diataxis.fr/explanation/) - Diátaxis 框架对 Explanation 的定义
-- [理解Deepractice内容体系](/zh/patterns/content-system/understanding-content-system) - Explanation 实践示例
-- [文件命名规范](./file-naming-convention.md) - 文档文件命名标准
+- [理解Deepractice内容体系](./understanding-content-system.md) - Explanation 实践示例
 
 ---
 
