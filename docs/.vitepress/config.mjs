@@ -136,6 +136,7 @@ export default withMermaid(
                   items: [
                     { text: '内容体系术语表', link: '/zh/practice/content-system/glossary' },
                     { text: '内容定位规范', link: '/zh/practice/content-system/content-positioning-standard' },
+                    { text: '目录索引规范', link: '/zh/practice/content-system/directory-index-standard' },
                     { text: '文件命名规范', link: '/zh/practice/content-system/file-naming-convention' },
                     { text: '文档校验规范', link: '/zh/practice/content-system/document-validation-standard' },
                     { text: 'Explanation撰写规范', link: '/zh/practice/content-system/writing-explanation-standard' },
@@ -283,7 +284,7 @@ export default withMermaid(
   
   // Markdown配置
   markdown: {
-    config: (md) => {
+    config: () => {
       // 使用其他markdown-it插件
     }
   },

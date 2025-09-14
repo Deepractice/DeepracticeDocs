@@ -4,8 +4,8 @@ type: Reference
 title: 内容定位规范
 category: content-system
 status: published
-version: 1.0.0
-date: 2025-01-13
+version: 2.0.0
+date: 2025-01-14
 author: Sean Jiang & Claude
 tags:
   - 文档规范
@@ -216,55 +216,104 @@ flowchart TD
 - ✅ Practice层：Git工作流规范、Docker使用标准、Nginx配置规范
 - ⚠️ 边界情况：我们fork并深度定制的开源工具 → 视定制程度决定
 
-## 目录级 PSO 定义
+## PSO 定义规范
 
-### pso.yml 文件
+### 统一原则
 
-为了管理目录级别的内容边界，每个内容目录可以包含一个 `pso.yml` 文件。
+所有 PSO 定义都在文档的 frontmatter 中，包括：
+- **文档级 PSO**：定义单个文档的边界
+- **目录级 PSO**：在目录的 index.md 中定义整个目录的边界
 
-#### 文件结构
+### 必需规则
+
+1. **每个目录必须有 index.md 文件**
+2. **index.md 的 PSO 定义该目录的范围**
+3. **PSO 三要素格式保持一致**
+
+### PSO 标准格式
 
 ```yaml
-# pso.yml - 目录级 PSO 定义
-purpose: 目录的核心目标和价值
+# 三个核心字段（必需）
+purpose: 一句话说明目的
 scope:
-  includes:
-    - 包含的内容范围
-    - 负责的技术领域
+  includes: 
+    - 包含内容列表
   excludes:
-    - topic_name: 不包含的内容 → /应该去的目录/
+    - 排除内容: → /建议位置/  # excludes 可选
 outcome:
-  - 用户能获得的能力
-  - 可以解决的问题
+  - 预期成果列表
 ```
 
-#### 特殊字段
+### 文档级 PSO 示例
 
-| 字段 | 用途 | 示例 |
-|------|------|------|
-| `criteria` | 内容归属判断标准 | 必须是 Monorepo 特有的内容 |
-| `relations` | 与其他目录的关系 | dependencies, references, extends |
-| `subdirectories` | 子目录职责说明 | 各子目录的 focus 和 description |
-| `document_types` | 文档类型分布建议 | Reference 40%, Explanation 30% |
+```yaml
+---
+layer: Practice
+type: Reference
+title: 文档标题
+# ... 其他元数据 ...
 
-#### 使用场景
+# 文档级 PSO
+purpose: 定义文档在内容体系中的精确定位方法
+scope:
+  includes:
+    - 层级定位（4P体系）
+    - 类型定位（Diátaxis）
+    - 目标定位（PSO）
+  excludes:
+    - 具体写作规范: → ./writing-reference-standard.md
+    - 文档模板: → ./templates/
+outcome:
+  - 能准确定位文档层级和类型
+  - 能定义文档目标和边界
+---
+```
 
-1. **创建新目录**：先定义 pso.yml，明确目录职责
-2. **添加新文档**：查看目录的 pso.yml，确认内容归属
-3. **内容审查**：基于 pso.yml 判断文档位置是否正确
-4. **自动化验证**：工具读取 pso.yml 进行边界检查
+### 目录级 PSO 示例
 
-#### 层级示例
+```yaml
+# 目录的 index.md
+---
+layer: Practice
+type: Reference  # 索引页通常是 Reference
+title: 内容体系实践标准
+# ... 其他元数据 ...
+
+# 目录级 PSO（定义整个目录的边界）
+purpose: 定义文档体系的撰写、组织和管理标准
+scope:
+  includes:
+    - 文档定位方法
+    - 各类型撰写规范
+    - 文档校验标准
+  excludes:
+    - 具体业务文档: → /products/
+    - 技术实现细节: → /practice/development-environment/
+outcome:
+  - 能准确定位和组织文档
+  - 能撰写符合规范的各类文档
+  - 能有效管理文档体系
+---
+
+# 内容体系实践标准
+
+[目录介绍内容...]
+```
+
+### 层级示例
 
 ```
 /practice/
-├── pso.yml                    # Practice 层总体定义
-├── development-environment/
-│   ├── pso.yml               # 开发环境目录定义
-│   └── monorepo/
-│       ├── pso.yml           # Monorepo 子目录定义
-│       ├── monorepo-standard.md
-│       └── monorepo-configuration.md
+├── index.md                    # Practice 层总体 PSO
+├── content-system/
+│   ├── index.md               # 内容体系目录 PSO
+│   └── content-positioning-standard.md  # 具体文档 PSO
+└── development-environment/
+    ├── index.md               # 开发环境目录 PSO
+    └── monorepo/
+        ├── index.md           # Monorepo 子目录 PSO
+        ├── monorepo-standard.md
+        └── monorepo-configuration.md
 ```
 
 ## 特殊情况处理
