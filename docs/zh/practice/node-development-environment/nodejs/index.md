@@ -314,6 +314,19 @@ npm list -g --depth=0
 ## 相关资源
 
 ### 内部文档
+
+#### 核心规范
+- [Node.js 版本管理标准](./nodejs-version-standard.md) `Reference` - LTS 策略与版本升级
+- [环境变量配置标准](./environment-variables-standard.md) `Reference` - NODE_ENV 与配置管理
+- [包管理器配置规范](./package-manager-configuration-standard.md) `Reference` - npm/pnpm/yarn 配置
+- [全局工具管理规范](./global-tools-management-standard.md) `Reference` - 必装工具与版本控制
+- [packageManager 字段规范](./package-manager-field-standard.md) `Reference` - Corepack 自动化管理
+- [engines 约束配置规范](./engines-constraint-standard.md) `Reference` - 运行时版本约束
+
+#### 操作指南
+- [如何配置 Node.js 环境](./how-to-setup-nodejs.md) `How-to` - 5分钟快速上手
+
+#### 相关目录
 - [Node.js 开发环境规范](../index.md) - 父级规范
 - [包管理策略](../package-management/index.md) - 包管理详细说明
 - [项目初始化](../initialization/index.md) - 新项目配置
