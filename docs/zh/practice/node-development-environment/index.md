@@ -15,27 +15,56 @@ tags:
   - 最佳实践
 
 # 目录级 PSO
-purpose: 为组织成员（人和AI）提供统一的 Node.js 开发标准，减少环境配置决策，提升协作效率
+purpose: 提供从零创建生产就绪的 Node.js/TypeScript Monorepo 项目的完整标准，确保团队能立即开始业务开发
 scope:
   includes:
-    - Node.js 环境的标准化配置方案
-    - TypeScript 项目的统一开发规范
-    - 代码检查和格式化标准
-    - 包管理和依赖的标准化流程
-    - Monorepo 的标准组织模式
-    - 工具链的统一配置模板
-    - 团队协作的共同约定
+    # 项目初始化
+    - Monorepo 项目脚手架和初始化模板
+    - 标准目录结构和文件模板
+  
+    # 核心开发环境
+    - Node.js 运行环境配置标准（版本约束、packageManager）
+    - TypeScript 配置和类型管理（strict mode、编译选项）
+    - ESModule 配置与模块系统（package.json type, tsconfig module）
+    - 模块解析与导入路径配置（路径别名、baseUrl、paths）
+    - pnpm workspace 包管理策略（overrides、版本同步）
+  
+    # 代码质量保证
+    - ESLint + Prettier 代码规范配置
+    - 测试框架配置（Vitest、覆盖率报告、测试模式）
+    - Git hooks 和提交规范（lefthook + commitlint + commitizen）
+    - 依赖安全扫描配置（npm audit）
+  
+    # 工程化能力
+    - 构建打包配置（Vite/Rollup/TSC）
+    - 构建输出规范（dist 结构、产物类型、source maps）
+    - Turborepo 配置（pipeline、缓存策略、任务编排）
+    - 环境变量和配置管理（.env 文件、环境隔离）
+    - 日志规范与调试配置（console、debugger、source maps）
+    - API 文档自动生成（TypeDoc、JSDoc 规范）
+  
+    # 自动化流程
+    - CI/CD 管道模板（GitHub Actions）
+    - 自动化测试和覆盖率要求
+    - 版本发布和 Changelog 生成
+  
+    # 开发体验
+    - VSCode 工作区配置
+    - 开发工具链集成
+    - 项目文档模板（README、Contributing）
+  
   excludes:
-    - 业务逻辑实现细节  # 让团队专注于此
-    - 个人偏好的编码风格  # 由工具自动处理
-    - 特定框架的使用方法  # 属于Products层
+    - 具体业务逻辑实现
+    - 特定框架使用（React/Vue/Nest）
+    - 部署平台特定配置（AWS/阿里云）
+  
 outcome:
-  - 新成员（人或AI）能快速搭建一致的开发环境
-  - 团队成员遵循相同的开发模式，降低协作成本
-  - 开发者能专注于业务逻辑而非环境配置
-  - 项目间能共享配置和最佳实践
+  - 能在 10 分钟内创建一个配置完整的 Monorepo 项目
+  - 项目自带所有必要的工程化配置，可立即开始业务开发
+  - 代码质量、测试、构建、发布流程全部标准化
+  - 新成员（人或 AI）可通过模板快速上手
+  - 避免在工程配置上的重复决策和时间浪费
 ---
-
 # Node.js 开发环境规范
 
 ## 概述
@@ -54,13 +83,15 @@ outcome:
 
 ```
 node-development-environment/
-├── nodejs/               # Node.js 运行时配置
-├── typescript/           # TypeScript 配置和最佳实践
-├── linting/             # 代码检查标准 ⭐ 
-├── monorepo/            # Monorepo 项目组织
-├── package-management/   # 包管理策略
-├── toolchain/           # 工具链集成
-└── vscode/              # VSCode 配置优化
+├── initialization/       # 项目初始化 🚀
+├── nodejs/              # Node.js 运行时配置
+├── typescript/          # TypeScript 配置和最佳实践
+├── linting/            # 代码检查标准 ⭐ 
+├── testing/            # 测试框架配置 🧪
+├── monorepo/           # Monorepo 项目组织
+├── package-management/  # 包管理策略
+├── toolchain/          # 工具链集成
+└── vscode/             # VSCode 配置优化
 ```
 
 ## 核心内容
@@ -68,6 +99,7 @@ node-development-environment/
 ### ⭐ 代码检查标准
 
 代码检查是保证代码质量的第一道防线，比其他任何工具都重要：
+
 - ESLint 规则标准化
 - Prettier 格式统一
 - TypeScript 严格模式
@@ -80,9 +112,25 @@ node-development-environment/
 - Prettier 配置标准 `Reference` - 待创建
 - 如何配置代码检查 `How-to` - 待创建
 
+### 🧪 测试框架配置
+
+测试是代码质量保证的核心环节：
+- Vitest 配置标准
+- 测试策略（单元、集成、E2E）
+- 覆盖率要求
+- Mock 和测试数据管理
+
+#### 相关文档
+
+- [测试框架配置](./testing/) `Index` - 完整的测试规范
+- 单元测试最佳实践 `How-to` - 待创建
+- 测试覆盖率标准 `Reference` - 待创建
+- E2E 测试指南 `How-to` - 待创建
+
 ### 🔷 TypeScript 开发规范
 
 TypeScript 是 Node.js 生态的首选开发语言，提供：
+
 - 类型安全和更好的 IDE 支持
 - 编译时错误检查
 - 现代 JavaScript 特性
@@ -98,6 +146,7 @@ TypeScript 是 Node.js 生态的首选开发语言，提供：
 ### 🏗️ Monorepo 项目组织
 
 Monorepo 是管理多包 Node.js 项目的现代化方案，特别适合：
+
 - npm 包的集中管理
 - 共享 TypeScript 配置和类型
 - 统一的构建和测试流程
@@ -111,6 +160,7 @@ Monorepo 是管理多包 Node.js 项目的现代化方案，特别适合：
 ### 📦 Node.js 环境配置
 
 完整的 Node.js 运行环境标准化：
+
 - 版本管理（fnm/nvm）
 - 环境变量配置
 - 包管理器设置
@@ -134,12 +184,12 @@ Monorepo 是管理多包 Node.js 项目的现代化方案，特别适合：
 
 根据你的需求选择：
 
-| 场景 | 推荐内容 |
-|------|----------|
-| 管理多个相关项目 | Monorepo 系列文档 |
+| 场景                 | 推荐内容                    |
+| -------------------- | --------------------------- |
+| 管理多个相关项目     | Monorepo 系列文档           |
 | 搭建 TypeScript 项目 | TypeScript 配置（即将推出） |
-| 配置开发工具 | VSCode 配置（即将推出） |
-| 容器化开发 | Docker 环境（即将推出） |
+| 配置开发工具         | VSCode 配置（即将推出）     |
+| 容器化开发           | Docker 环境（即将推出）     |
 
 ### 实施步骤
 
@@ -160,6 +210,7 @@ Monorepo 是管理多包 Node.js 项目的现代化方案，特别适合：
 ## 相关资源
 
 ### 外部参考
+
 - [Node.js Best Practices](https://github.com/goldbergyoni/nodebestpractices)
 - [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/)
 - [Docker Best Practices](https://docs.docker.com/develop/dev-best-practices/)
