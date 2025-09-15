@@ -11,13 +11,13 @@ tags:
   - TypeScript
   - 类型管理
   - 类型声明
-  - @types
+  - types
 
 purpose: 规范 TypeScript 类型声明的组织、管理和维护标准，确保类型安全和开发体验
 scope:
   includes:
     - 类型文件组织结构（types/ 目录规范）
-    - @types 包的选择和版本管理
+    - DefinitelyTyped 包的选择和版本管理
     - 自定义类型声明文件（.d.ts）编写
     - 全局类型扩展和模块声明
     - 类型导出和共享策略
@@ -29,7 +29,7 @@ scope:
     - 类型体操技巧  # 属于高级教程
 outcome:
   - 能建立规范的类型文件结构
-  - 能正确管理 @types 依赖
+  - 能正确管理 DefinitelyTyped 依赖
   - 能为无类型库创建声明
   - 能维护类型的一致性和准确性
 ---
