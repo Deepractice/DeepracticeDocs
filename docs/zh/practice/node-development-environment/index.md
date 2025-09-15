@@ -20,6 +20,7 @@ scope:
   includes:
     - Node.js 环境的标准化配置方案
     - TypeScript 项目的统一开发规范
+    - 代码检查和格式化标准
     - 包管理和依赖的标准化流程
     - Monorepo 的标准组织模式
     - 工具链的统一配置模板
@@ -53,24 +54,31 @@ outcome:
 
 ```
 node-development-environment/
-├── typescript/            # TypeScript 配置和最佳实践
-│   ├── index.md          # TypeScript 规范概览
-│   ├── typescript-configuration.md
-│   ├── typescript-best-practices.md
-│   └── how-to-setup-typescript.md
-├── monorepo/              # Monorepo 项目组织
-│   ├── index.md          # Monorepo 概览
-│   ├── monorepo-standard.md
-│   ├── monorepo-configuration.md
-│   ├── how-to-initialize-monorepo.md
-│   └── understanding-monorepo-architecture.md
-├── nodejs/               # Node.js 运行时配置（计划中）
-├── package-management/   # 包管理策略（计划中）
-├── toolchain/           # 工具链集成（计划中）
-└── vscode/              # VSCode 配置优化（计划中）
+├── nodejs/               # Node.js 运行时配置
+├── typescript/           # TypeScript 配置和最佳实践
+├── linting/             # 代码检查标准 ⭐ 
+├── monorepo/            # Monorepo 项目组织
+├── package-management/   # 包管理策略
+├── toolchain/           # 工具链集成
+└── vscode/              # VSCode 配置优化
 ```
 
 ## 核心内容
+
+### ⭐ 代码检查标准
+
+代码检查是保证代码质量的第一道防线，比其他任何工具都重要：
+- ESLint 规则标准化
+- Prettier 格式统一
+- TypeScript 严格模式
+- 自动化质量保证
+
+#### 相关文档
+
+- [代码检查标准](./linting/) `Index` - 完整的 Lint 配置指南
+- ESLint 规则标准 `Reference` - 待创建
+- Prettier 配置标准 `Reference` - 待创建
+- 如何配置代码检查 `How-to` - 待创建
 
 ### 🔷 TypeScript 开发规范
 
@@ -82,10 +90,10 @@ TypeScript 是 Node.js 生态的首选开发语言，提供：
 
 #### 相关文档
 
-- TypeScript 规范概览 `Index` - 即将推出
-- TypeScript 配置标准 `Reference` - 即将推出
-- TypeScript 最佳实践 `Reference` - 即将推出
-- 如何配置 TypeScript 项目 `How-to` - 即将推出
+- [TypeScript 开发规范](./typescript/) `Index` - 完整的 TypeScript 指南
+- TypeScript 配置标准 `Reference` - 待创建
+- TypeScript 最佳实践 `Reference` - 待创建
+- 如何配置 TypeScript 项目 `How-to` - 待创建
 
 ### 🏗️ Monorepo 项目组织
 
@@ -96,20 +104,29 @@ Monorepo 是管理多包 Node.js 项目的现代化方案，特别适合：
 
 #### 相关文档
 
-- [Monorepo 实践标准](./monorepo/) `Index` - 完整的 Monorepo 指南
-- [Monorepo 基础架构规范](./monorepo/monorepo-standard.md) `Reference` - 技术选型和架构标准
-- [Monorepo 配置模板集](./monorepo/monorepo-configuration.md) `Reference` - 生产级配置模板
-- [如何初始化生产级 Monorepo](./monorepo/how-to-initialize-monorepo.md) `How-to` - 步骤化操作指南
-- [理解 Monorepo 架构](./monorepo/understanding-monorepo-architecture.md) `Explanation` - 设计理念和权衡
+- [Monorepo 实践指南](./monorepo/) `Index` - 完整的 Monorepo 指南
+- 架构设计标准 `Reference` - 待创建
+- 开发工作流 `How-to` - 待创建
 
-### 🔧 即将推出
+### 📦 Node.js 环境配置
 
-以下内容正在规划中：
+完整的 Node.js 运行环境标准化：
+- 版本管理（fnm/nvm）
+- 环境变量配置
+- 包管理器设置
+- 全局工具管理
 
-- **Node.js 运行时管理** - nvm、版本策略、环境变量
-- **包管理策略** - pnpm 工作区、依赖管理、版本控制
-- **工具链集成** - ESLint、Prettier、Husky、lint-staged
-- **VSCode 配置优化** - 针对 Node.js/TypeScript 的编辑器优化
+#### 相关文档
+
+- [Node.js 环境标准](./nodejs/) `Index` - 环境配置完整指南
+- [Node.js 版本管理标准](./nodejs/nodejs-version-standard.md) `Reference` - 版本策略
+- [如何配置 Node.js 环境](./nodejs/how-to-setup-nodejs.md) `How-to` - 快速上手
+
+### 🛠️ 其他重要内容
+
+- [包管理策略](./package-management/) - 依赖管理的最佳实践
+- [工具链集成](./toolchain/) - 构建、测试、Git hooks 等
+- [VSCode 配置优化](./vscode/) - 编辑器最佳配置
 
 ## 使用指南
 
